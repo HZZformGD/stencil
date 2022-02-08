@@ -1,5 +1,5 @@
 {
-  "name": "@stencil/core",
+  "name": "stencil-hotfix",
   "version": "2.13.0",
   "license": "MIT",
   "main": "./internal/stencil-core/index.cjs",
