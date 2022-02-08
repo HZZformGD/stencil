@@ -130,7 +130,7 @@ export function runReleaseTasks(opts: BuildOptions, args: ReadonlyArray<string>)
         task: () => execa('npm', ['run', 'tsc.prod'], { cwd: rootDir }),
       },
       {
-        title: `Bundle @stencil/core ${color.dim('(' + opts.buildId + ')')}`,
+        title: `Bundle ${opts.packageJson.name} ${color.dim('(' + opts.buildId + ')')}`,
         task: () => bundleBuild(opts),
       },
       {
@@ -168,7 +168,7 @@ export function runReleaseTasks(opts: BuildOptions, args: ReadonlyArray<string>)
   if (opts.isPublishRelease) {
     tasks.push(
       {
-        title: 'Publish @stencil/core to npm',
+        title: `Publish ${opts.packageJson.name} to npm`,
         task: () => {
           const cmd = 'npm';
           const cmdArgs = ['publish', '--otp', opts.otp].concat(opts.tag ? ['--tag', opts.tag] : []);
@@ -219,10 +219,10 @@ export function runReleaseTasks(opts: BuildOptions, args: ReadonlyArray<string>)
 
     if (opts.tag !== 'next' && opts.tag !== 'test') {
       tasks.push({
-        title: 'Also set "next" npm tag on @stencil/core',
+        title: `Also set "next" npm tag on ${opts.packageJson.name}`,
         task: () => {
           const cmd = 'npm';
-          const cmdArgs = ['dist-tag', 'add', '@stencil/core@' + opts.version, 'next'];
+          const cmdArgs = ['dist-tag', 'add', `${opts.packageJson.name}` + opts.version, 'next'];
 
           if (isDryRun) {
             return console.log(`[dry-run] ${cmd} ${cmdArgs.join(' ')}`);
