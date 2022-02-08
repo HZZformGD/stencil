@@ -1,3 +1,19 @@
+## 😃 [2.13.2](https://github.com/HZZformGD/stencil/compare/v2.13.0...v2.13.2) (2022-02-08)
+
+
+### Bug Fixes
+
+* dynamic import using vite ([df9b400](https://github.com/HZZformGD/stencil/commit/df9b40091a3341a44b233775cbf402d437d548b3))
+* dynamic import using vite ([f62696f](https://github.com/HZZformGD/stencil/commit/f62696f36ceb8f8890d20bd32eafb1f5cd59b8a3))
+* dynamic import using vite ([19951ae](https://github.com/HZZformGD/stencil/commit/19951ae24921103d2c673233709aeca8231fd673))
+
+
+### Features
+
+* **typescript:** typescript 4.5 support ([#3205](https://github.com/HZZformGD/stencil/issues/3205)) ([806012e](https://github.com/HZZformGD/stencil/commit/806012ebc38f611ccb7a687938af839577c85ea8))
+
+
+
 ## 🐟 [2.13.1](https://github.com/ionic-team/stencil/compare/v2.13.0...v2.13.1) (2022-02-08)
 
 

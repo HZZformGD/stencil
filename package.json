@@ -1,6 +1,6 @@
 {
   "name": "stencil-hotfix",
-  "version": "2.13.1",
+  "version": "2.13.2",
   "license": "MIT",
   "main": "./internal/stencil-core/index.cjs",
   "module": "./internal/stencil-core/index.js",
