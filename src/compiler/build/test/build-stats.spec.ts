@@ -1,5 +1,5 @@
-import type * as d from '@stencil/core/declarations';
-import { mockConfig, mockCompilerCtx, mockBuildCtx } from '@stencil/core/testing';
+import type * as d from 'stencil-hotfix/declarations';
+import { mockConfig, mockCompilerCtx, mockBuildCtx } from 'stencil-hotfix/testing';
 import { generateBuildResults } from '../build-results';
 import { generateBuildStats } from '../build-stats';
 import path from 'path';

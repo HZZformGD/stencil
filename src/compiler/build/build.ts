@@ -1,7 +1,7 @@
 import type * as d from '../../declarations';
 import { buildAbort, buildFinish } from './build-finish';
 import { catchError, isString, readPackageJson } from '@utils';
-import { createDocument } from '@stencil/core/mock-doc';
+import { createDocument } from 'stencil-hotfix/mock-doc';
 import { emptyOutputTargets } from '../output-targets/empty-dir';
 import { generateGlobalStyles } from '../style/global-styles';
 import { generateOutputTargets } from '../output-targets';
