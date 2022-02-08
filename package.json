@@ -135,7 +135,7 @@
     "type": "git",
     "url": "git+https://github.com/HZZformGD/stencil.git"
   },
-  "author": "Ionic Team",
+  "author": "zhenzhanhuang",
   "homepage": "https://stenciljs.com/",
   "description": "A Compiler for Web Components and Progressive Web Apps",
   "keywords": [
