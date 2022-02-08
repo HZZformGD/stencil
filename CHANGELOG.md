@@ -1,3 +1,15 @@
+## 🎢 [2.13.3](https://github.com/HZZformGD/stencil/compare/v2.13.2...v2.13.3) (2022-02-08)
+
+
+### Bug Fixes
+
+* dynamic import using vite ([1c4d6e9](https://github.com/HZZformGD/stencil/commit/1c4d6e9e1fdbaf2680d68002e3e6801af5312c04))
+* replace ([fd396cb](https://github.com/HZZformGD/stencil/commit/fd396cb0d5c1f33102127abaef04eddea3c9b19a))
+* replace name ([cc3395a](https://github.com/HZZformGD/stencil/commit/cc3395a1793b7a7b5a34bece1de4826b34ab30a0))
+* replace name ([6a26ca0](https://github.com/HZZformGD/stencil/commit/6a26ca0f9bb215a0ac8c871d9c0eef4d9fee8819))
+
+
+
 ## 😃 [2.13.2](https://github.com/HZZformGD/stencil/compare/v2.13.0...v2.13.2) (2022-02-08)
 
 
