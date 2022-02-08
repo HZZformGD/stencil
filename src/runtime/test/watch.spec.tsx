@@ -1,5 +1,5 @@
-import { Component, Method, Prop, State, Watch } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Method, Prop, State, Watch } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('watch', () => {
   it('watch is called each time a prop changes', async () => {

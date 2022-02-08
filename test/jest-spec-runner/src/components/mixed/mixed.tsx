@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h } from 'stencil-hotfix';
 import deepEsm from '../utils/as-js-esm';
 import deepCjs from '../utils/as-js-cjs';
 import deepTs from '../utils/as-ts';

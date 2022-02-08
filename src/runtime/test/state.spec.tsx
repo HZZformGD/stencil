@@ -1,5 +1,5 @@
-import { Component, Method, State } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Method, State } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('state', () => {
   it('set default values, update on re-render', async () => {

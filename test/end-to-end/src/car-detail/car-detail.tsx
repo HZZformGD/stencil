@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h } from 'stencil-hotfix';
 import { CarData } from '../car-list/car-data';
 
 @Component({

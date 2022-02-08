@@ -1,5 +1,5 @@
-import { Component, Build, Env } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Build, Env } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('globals', () => {
   @Component({

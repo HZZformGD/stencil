@@ -1,5 +1,5 @@
-import { Component, Event, EventEmitter, Listen, Method, State } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Event, EventEmitter, Listen, Method, State } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('event', () => {
   it('event normal ionChange event', async () => {

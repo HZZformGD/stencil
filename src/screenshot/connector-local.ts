@@ -1,4 +1,4 @@
-import type * as d from '@stencil/core/internal';
+import type * as d from 'stencil-hotfix/internal';
 import { fileExists, readFile, writeFile } from './screenshot-fs';
 import { join, relative } from 'path';
 import { normalizePath } from '@utils';

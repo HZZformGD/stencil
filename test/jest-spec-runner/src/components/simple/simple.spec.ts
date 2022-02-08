@@ -1,4 +1,4 @@
-import { newSpecPage } from '@stencil/core/testing';
+import { newSpecPage } from 'stencil-hotfix/testing';
 import { MySimple } from './simple';
 
 describe('my-simple', () => {

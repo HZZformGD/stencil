@@ -1,6 +1,6 @@
 import type * as d from '../../../declarations';
-import { createCompiler } from '@stencil/core/compiler';
-import { mockConfig } from '@stencil/core/testing';
+import { createCompiler } from 'stencil-hotfix/compiler';
+import { mockConfig } from 'stencil-hotfix/testing';
 import { normalizePath } from '@utils';
 import path from 'path';
 

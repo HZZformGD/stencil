@@ -1,6 +1,6 @@
-import type * as d from '@stencil/core/declarations';
+import type * as d from 'stencil-hotfix/declarations';
 import { validateConfig } from '../validate-config';
-import { mockConfig } from '@stencil/core/testing';
+import { mockConfig } from 'stencil-hotfix/testing';
 import path from 'path';
 
 describe('validateDistOutputTarget', () => {

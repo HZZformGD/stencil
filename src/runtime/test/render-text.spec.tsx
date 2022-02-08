@@ -1,5 +1,5 @@
-import { Component, Prop } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Prop } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('render-text', () => {
   @Component({ tag: 'cmp-a' })

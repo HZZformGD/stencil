@@ -64,7 +64,7 @@ const generateComponentTypesFile = (config: d.Config, buildCtx: d.BuildCtx, inte
   });
 
   c.push(COMPONENTS_DTS_HEADER);
-  c.push(`import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";`);
+  c.push(`import { HTMLStencilElement, JSXBase } from "stencil-hotfix/internal";`);
 
   c.push(
     ...Object.keys(typeImportData).map((filePath) => {
@@ -112,7 +112,7 @@ const generateComponentTypesFile = (config: d.Config, buildCtx: d.BuildCtx, inte
 
   c.push(`export { LocalJSX as JSX };`);
 
-  c.push(`declare module "@stencil/core" {`);
+  c.push(`declare module "stencil-hotfix" {`);
   c.push(`        export namespace JSX {`);
   c.push(`                interface IntrinsicElements {`);
   c.push(

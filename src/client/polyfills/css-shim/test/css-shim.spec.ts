@@ -1,5 +1,5 @@
 import { CustomStyle } from '../custom-style';
-import { mockWindow } from '@stencil/core/testing';
+import { mockWindow } from 'stencil-hotfix/testing';
 
 describe('css-shim', () => {
   it('should set value in second addCustomStyle with async tick', async () => {

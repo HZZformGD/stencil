@@ -1,4 +1,4 @@
-import { newE2EPage } from '@stencil/core/testing';
+import { newE2EPage } from 'stencil-hotfix/testing';
 
 describe('@Element', () => {
   it('should read the host elements attribute', async () => {

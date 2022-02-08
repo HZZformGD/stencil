@@ -1,4 +1,4 @@
-import type * as d from '@stencil/core/internal';
+import type * as d from 'stencil-hotfix/internal';
 
 export function resetBuildConditionals(b: d.BuildConditionals) {
   Object.keys(b).forEach((key) => {

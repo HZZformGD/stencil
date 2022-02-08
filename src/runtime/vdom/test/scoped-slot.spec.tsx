@@ -1,5 +1,5 @@
-import { Component, Prop, h, forceUpdate } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Prop, h, forceUpdate } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('scoped slot', () => {
   it('should relocate nested default slot nodes', async () => {

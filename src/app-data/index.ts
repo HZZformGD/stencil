@@ -1,4 +1,4 @@
-import type { BuildConditionals } from '@stencil/core/internal';
+import type { BuildConditionals } from 'stencil-hotfix/internal';
 
 export const BUILD: BuildConditionals = {
   allRenderFn: false,

@@ -5,7 +5,7 @@ import {
   Config,
   Module,
   ModuleMap,
-} from '@stencil/core/internal';
+} from 'stencil-hotfix/internal';
 import { unique } from '@utils';
 
 export * from '../../app-data';

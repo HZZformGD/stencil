@@ -1,1 +1,1 @@
-export * from '@stencil/core/internal/client';
+export * from 'stencil-hotfix/internal/client';

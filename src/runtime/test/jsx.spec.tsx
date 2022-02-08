@@ -1,5 +1,5 @@
-import { Component, Host, Prop, State, h, Fragment } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Host, Prop, State, h, Fragment } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 import { FunctionalComponent } from '../../declarations';
 
 describe('jsx', () => {

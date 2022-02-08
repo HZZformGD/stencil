@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, h } from 'stencil-hotfix';
 import { location as module } from './module';
 import { location as moduleIndex } from './module/index';
 

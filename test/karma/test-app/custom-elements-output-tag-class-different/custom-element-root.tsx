@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, h } from 'stencil-hotfix';
 
 @Component({
   tag: 'custom-element-root-different-name-than-class',

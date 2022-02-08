@@ -13,7 +13,7 @@ export const updateStencilTypesImports = (typesDir: string, dtsFilePath: string,
   }
 
   coreDtsPath = normalizePath(coreDtsPath);
-  if (dtsContent.includes('@stencil/core')) {
+  if (dtsContent.includes('stencil-hotfix')) {
     dtsContent = dtsContent.replace(/(from\s*(:?'|"))@stencil\/core\/internal('|")/g, `$1${coreDtsPath}$2`);
     dtsContent = dtsContent.replace(/(from\s*(:?'|"))@stencil\/core('|")/g, `$1${coreDtsPath}$2`);
   }

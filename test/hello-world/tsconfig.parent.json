@@ -22,8 +22,8 @@
     "useUnknownInCatchVariables": true,
     "baseUrl": ".",
     "paths": {
-      "@stencil/core": ["../../internal"],
-      "@stencil/core/internal": ["../../internal"],
+      "stencil-hotfix": ["../../internal"],
+      "stencil-hotfix/internal": ["../../internal"],
       "hello-world-text": ["src/hello-world-text.ts"]
     }
   },

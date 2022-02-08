@@ -1,6 +1,6 @@
-import type * as d from '@stencil/core/declarations';
+import type * as d from 'stencil-hotfix/declarations';
 import { optimizeCss } from '../optimize-css';
-import { mockCompilerCtx, mockConfig } from '@stencil/core/testing';
+import { mockCompilerCtx, mockConfig } from 'stencil-hotfix/testing';
 import path from 'path';
 import os from 'os';
 

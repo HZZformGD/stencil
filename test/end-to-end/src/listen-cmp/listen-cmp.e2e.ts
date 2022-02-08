@@ -1,4 +1,4 @@
-import { newE2EPage } from '@stencil/core/testing';
+import { newE2EPage } from 'stencil-hotfix/testing';
 
 describe('@Listen', () => {
   it('host listener toggles "opened" from "click" event', async () => {

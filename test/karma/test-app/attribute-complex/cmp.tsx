@@ -1,4 +1,4 @@
-import { Component, Prop, Method } from '@stencil/core';
+import { Component, Prop, Method } from 'stencil-hotfix';
 import { SomeTypes } from '../util';
 
 @Component({

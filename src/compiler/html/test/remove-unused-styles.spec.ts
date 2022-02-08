@@ -1,5 +1,5 @@
-import type * as d from '@stencil/core/declarations';
-import { mockDocument } from '@stencil/core/testing';
+import type * as d from 'stencil-hotfix/declarations';
+import { mockDocument } from 'stencil-hotfix/testing';
 import { removeUnusedStyles } from '../remove-unused-styles';
 
 describe('removeUnusedStyles', () => {

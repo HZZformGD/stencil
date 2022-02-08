@@ -1,4 +1,4 @@
-import { setMode } from '@stencil/core';
+import { setMode } from 'stencil-hotfix';
 
 const global = () => {
   setMode(

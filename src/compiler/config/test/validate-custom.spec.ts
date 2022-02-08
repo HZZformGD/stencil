@@ -1,5 +1,5 @@
-import type * as d from '@stencil/core/declarations';
-import { mockConfig } from '@stencil/core/testing';
+import type * as d from 'stencil-hotfix/declarations';
+import { mockConfig } from 'stencil-hotfix/testing';
 import { validateConfig } from '../validate-config';
 import { buildWarn } from '@utils';
 

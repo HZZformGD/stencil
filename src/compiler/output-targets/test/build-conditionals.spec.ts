@@ -1,7 +1,7 @@
 import type * as d from '../../../declarations';
 import { getLazyBuildConditionals } from '../dist-lazy/lazy-build-conditionals';
 import { getCustomElementsBuildConditionals } from '../dist-custom-elements-bundle/custom-elements-build-conditionals';
-import { mockConfig } from '@stencil/core/testing';
+import { mockConfig } from 'stencil-hotfix/testing';
 import { validateConfig } from '../../config/validate-config';
 
 describe('build-conditionals', () => {

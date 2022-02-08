@@ -1,6 +1,6 @@
 import { CmpAsset } from './fixtures/cmp-asset';
-import { newSpecPage } from '@stencil/core/testing';
-import { getAssetPath } from '@stencil/core';
+import { newSpecPage } from 'stencil-hotfix/testing';
+import { getAssetPath } from 'stencil-hotfix';
 
 describe('assets', () => {
   it('should load asset data', async () => {

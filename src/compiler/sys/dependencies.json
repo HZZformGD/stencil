@@ -1,7 +1,7 @@
 {
   "dependencies": [
     {
-      "name": "@stencil/core",
+      "name": "stencil-hotfix",
       "version": "__VERSION:STENCIL__",
       "main": "compiler/stencil.js",
       "resources": [

@@ -1,5 +1,5 @@
-import { Component, Prop, Watch } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Prop, Watch } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('lifecycle async', () => {
   it('wait for componentWillLoad', async () => {

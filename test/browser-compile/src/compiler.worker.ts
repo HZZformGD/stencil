@@ -1,6 +1,6 @@
-import type StencilCompiler from '@stencil/core/compiler';
+import type StencilCompiler from 'stencil-hotfix/compiler';
 
-(self as any).importScripts('/@stencil/core/compiler/stencil.js');
+(self as any).importScripts('/stencil-hotfix/compiler/stencil.js');
 
 const stencil: typeof StencilCompiler = (self as any).stencil;
 

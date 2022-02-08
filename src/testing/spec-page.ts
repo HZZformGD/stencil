@@ -14,7 +14,7 @@ import {
   win,
   writeTask,
   setSupportsShadowDom,
-} from '@stencil/core/internal/testing';
+} from 'stencil-hotfix/internal/testing';
 import { BUILD } from '@app-data';
 import type {
   ComponentCompilerMeta,
@@ -24,7 +24,7 @@ import type {
   LazyBundlesRuntimeData,
   NewSpecPageOptions,
   SpecPage,
-} from '@stencil/core/internal';
+} from 'stencil-hotfix/internal';
 import { formatLazyBundleRuntimeMeta } from '@utils';
 import { getBuildFeatures } from '../compiler/app-core/app-data';
 import { resetBuildConditionals } from './reset-build-conditionals';

@@ -1,5 +1,5 @@
-import { Component, Prop, Method, h } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Prop, Method, h } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('prop', () => {
   const spy = jest.spyOn(console, 'warn').mockImplementation();

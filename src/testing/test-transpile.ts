@@ -1,5 +1,5 @@
-import { transpileSync } from '@stencil/core/compiler';
-import type { TranspileOptions, TranspileResults } from '@stencil/core/internal';
+import { transpileSync } from 'stencil-hotfix/compiler';
+import type { TranspileOptions, TranspileResults } from 'stencil-hotfix/internal';
 import { isString } from '@utils';
 
 export function transpile(input: string, opts: TranspileOptions = {}): TranspileResults {
@@ -7,7 +7,7 @@ export function transpile(input: string, opts: TranspileOptions = {}): Transpile
     ...opts,
     componentExport: null,
     componentMetadata: 'compilerstatic',
-    coreImportPath: isString(opts.coreImportPath) ? opts.coreImportPath : '@stencil/core/internal/testing',
+    coreImportPath: isString(opts.coreImportPath) ? opts.coreImportPath : 'stencil-hotfix/internal/testing',
     currentDirectory: opts.currentDirectory || process.cwd(),
     module: 'cjs', // always use commonjs since we're in a node environment
     proxy: null,

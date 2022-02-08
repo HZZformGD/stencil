@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, h } from 'stencil-hotfix';
 
 @Component({
   tag: 'es5-addclass-svg',

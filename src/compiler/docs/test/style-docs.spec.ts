@@ -1,4 +1,4 @@
-import type * as d from '@stencil/core/declarations';
+import type * as d from 'stencil-hotfix/declarations';
 import { parseStyleDocs } from '../style-docs';
 
 describe('style-docs', () => {

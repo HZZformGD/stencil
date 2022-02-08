@@ -83,7 +83,7 @@ const runPrerender = async (
     devServerConfig.reloadStrategy = null;
 
     const devServerPath = config.sys.getDevServerExecutingPath();
-    const { start }: typeof import('@stencil/core/dev-server') = await config.sys.dynamicImport(devServerPath);
+    const { start }: typeof import('stencil-hotfix/dev-server') = await config.sys.dynamicImport(devServerPath);
     const devServer = await start(devServerConfig, config.logger);
 
     try {

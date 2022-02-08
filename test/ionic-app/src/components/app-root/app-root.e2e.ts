@@ -1,4 +1,4 @@
-import { newE2EPage } from '@stencil/core/testing';
+import { newE2EPage } from 'stencil-hotfix/testing';
 
 describe('app-root', () => {
   it('renders', async () => {

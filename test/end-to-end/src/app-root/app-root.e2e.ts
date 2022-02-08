@@ -1,4 +1,4 @@
-import { newE2EPage } from '@stencil/core/testing';
+import { newE2EPage } from 'stencil-hotfix/testing';
 
 describe('goto root url', () => {
   it('have custom hydrate flags and css', async () => {

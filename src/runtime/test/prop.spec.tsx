@@ -1,5 +1,5 @@
-import { Component, Prop, h } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Prop, h } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('prop', () => {
   it('"value" attribute', async () => {

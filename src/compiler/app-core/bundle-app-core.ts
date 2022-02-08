@@ -15,7 +15,7 @@ export const generateRollupOutput = async (
   const { output }: { output: [OutputChunk, ...(OutputChunk | OutputAsset)[]] } = await build.generate(options);
   return output.map((chunk: OutputChunk | OutputAsset) => {
     if (chunk.type === 'chunk') {
-      const isCore = Object.keys(chunk.modules).some((m) => m.includes('@stencil/core'));
+      const isCore = Object.keys(chunk.modules).some((m) => m.includes('stencil-hotfix'));
       return {
         type: 'chunk',
         fileName: chunk.fileName,
@@ -45,5 +45,5 @@ export * from '${STENCIL_CORE_ID}';
 `;
 
 export const DEFAULT_ENTRY = `
-export * from '@stencil/core';
+export * from 'stencil-hotfix';
 `;

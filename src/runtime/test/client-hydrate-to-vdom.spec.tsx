@@ -1,6 +1,6 @@
 import type * as d from '../../declarations';
-import { Component, Host, h } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Host, h } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 import { initializeClientHydrate } from '../client-hydrate';
 
 describe('initializeClientHydrate', () => {

@@ -44,7 +44,7 @@ export const taskTest = async (config: Config) => {
     }
 
     // let's test!
-    const { createTesting } = await import('@stencil/core/testing');
+    const { createTesting } = await import('stencil-hotfix/testing');
     const testing = await createTesting(config);
     const passed = await testing.run(testingRunOpts);
     await testing.destroy();

@@ -1,6 +1,6 @@
-# @stencil/core/internal
+# stencil-hotfix/internal
 
-NOTE!! The `@stencil/core/internal` package is not meant to be consumed directly by anything other than Stencil internals. It is its own package so that it can be resolved by Stencil, but breaking changes can/will happen at any time. This isn't a "use at your own discretion" moment, but it's more of a "never use this because your code will break" fact.
+NOTE!! The `stencil-hotfix/internal` package is not meant to be consumed directly by anything other than Stencil internals. It is its own package so that it can be resolved by Stencil, but breaking changes can/will happen at any time. This isn't a "use at your own discretion" moment, but it's more of a "never use this because your code will break" fact.
 
 
 ## `index.ts`
@@ -10,4 +10,4 @@ This is the main entry file for all of Stencil's internals, such as Stencil's ru
 
 ## `default.ts`
 
-By default, when Stencil resolves `@stencil/core/internal`, it's going to assume it wants the `client` internals (rather than `hydrate`). So by default, `@stencil/core/internal` actually points to `@stencil/core/internal/client`.
+By default, when Stencil resolves `stencil-hotfix/internal`, it's going to assume it wants the `client` internals (rather than `hydrate`). So by default, `stencil-hotfix/internal` actually points to `stencil-hotfix/internal/client`.

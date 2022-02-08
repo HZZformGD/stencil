@@ -1,5 +1,5 @@
-import { Component, Element, Prop, h, Host } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Element, Prop, h, Host } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('attribute', () => {
   it('multi-word attribute', async () => {

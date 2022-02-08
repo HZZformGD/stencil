@@ -1,4 +1,4 @@
-import type { CompilerSystem } from '@stencil/core/internal';
+import type { CompilerSystem } from 'stencil-hotfix/internal';
 import { createSystem } from '../compiler/sys/stencil-sys';
 import { createHash } from 'crypto';
 import path from 'path';

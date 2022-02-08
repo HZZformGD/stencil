@@ -1,4 +1,4 @@
-import { newSpecPage } from '@stencil/core/testing';
+import { newSpecPage } from 'stencil-hotfix/testing';
 import { CmpA } from './fixtures/cmp-a';
 
 describe('newSpecPage, spec testing', () => {

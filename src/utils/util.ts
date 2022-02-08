@@ -192,4 +192,4 @@ export const parseJson = (jsonStr: string, filePath?: string) => {
   return rtn;
 };
 
-const SKIP_DEPS = ['@stencil/core'];
+const SKIP_DEPS = ['stencil-hotfix'];

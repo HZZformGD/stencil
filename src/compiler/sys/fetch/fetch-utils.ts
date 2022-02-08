@@ -60,7 +60,7 @@ export const getNodeModuleFetchUrl = (sys: d.CompilerSystem, pkgVersions: Map<st
   }
 
   const path = pathParts.join('/');
-  if (moduleId === '@stencil/core') {
+  if (moduleId === 'stencil-hotfix') {
     const compilerExe = sys.getCompilerExecutingPath();
     return getStencilModuleUrl(compilerExe, path);
   }
@@ -97,19 +97,19 @@ export const skipUrlFetch = (url: string) =>
   knownUrlSkips.some((knownSkip) => url.endsWith(knownSkip));
 
 const knownUrlSkips = [
-  '/@stencil/core/internal.js',
-  '/@stencil/core/internal.json',
-  '/@stencil/core/internal.mjs',
-  '/@stencil/core/internal/stencil-core.js/index.json',
-  '/@stencil/core/internal/stencil-core.js.json',
-  '/@stencil/core/internal/stencil-core.js/package.json',
-  '/@stencil/core.js',
-  '/@stencil/core.json',
-  '/@stencil/core.mjs',
-  '/@stencil/core.css',
-  '/@stencil/core/index.js',
-  '/@stencil/core/index.json',
-  '/@stencil/core/index.mjs',
-  '/@stencil/core/index.css',
+  '/stencil-hotfix/internal.js',
+  '/stencil-hotfix/internal.json',
+  '/stencil-hotfix/internal.mjs',
+  '/stencil-hotfix/internal/stencil-core.js/index.json',
+  '/stencil-hotfix/internal/stencil-core.js.json',
+  '/stencil-hotfix/internal/stencil-core.js/package.json',
+  '/stencil-hotfix.js',
+  '/stencil-hotfix.json',
+  '/stencil-hotfix.mjs',
+  '/stencil-hotfix.css',
+  '/stencil-hotfix/index.js',
+  '/stencil-hotfix/index.json',
+  '/stencil-hotfix/index.mjs',
+  '/stencil-hotfix/index.css',
   '/@stencil/package.json',
 ];

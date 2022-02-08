@@ -6,7 +6,7 @@
  */
 
 
-import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
+import { HTMLStencilElement, JSXBase } from 'stencil-hotfix/internal';
 
 
 export namespace Components {
@@ -121,7 +121,7 @@ declare namespace LocalJSX {
 export { LocalJSX as JSX };
 
 
-declare module "@stencil/core" {
+declare module "stencil-hotfix" {
   export namespace JSX {
     interface IntrinsicElements {
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;

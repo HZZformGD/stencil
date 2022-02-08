@@ -1,4 +1,4 @@
-import type * as d from '@stencil/core/internal';
+import type * as d from 'stencil-hotfix/internal';
 import fs from 'fs';
 import pixelmatch from 'pixelmatch';
 import { PNG } from 'pngjs';

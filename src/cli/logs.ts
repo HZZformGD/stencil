@@ -6,7 +6,7 @@ export const startupLog = (logger: Logger, task: TaskCommand) => {
     return;
   }
 
-  logger.info(logger.cyan(`@stencil/core`));
+  logger.info(logger.cyan(`stencil-hotfix`));
 };
 
 export const startupLogVersion = (logger: Logger, task: TaskCommand, coreCompiler: CoreCompiler) => {

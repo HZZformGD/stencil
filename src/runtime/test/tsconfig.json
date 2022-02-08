@@ -21,8 +21,8 @@
     "useUnknownInCatchVariables": true,
     "baseUrl": ".",
     "paths": {
-      "@stencil/core": ["../../index.ts"],
-      "@stencil/core/testing": ["../../testing/index.ts"]
+      "stencil-hotfix": ["../../index.ts"],
+      "stencil-hotfix/testing": ["../../testing/index.ts"]
     }
   }
 }

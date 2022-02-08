@@ -1,4 +1,4 @@
-import { newE2EPage } from '@stencil/core/testing';
+import { newE2EPage } from 'stencil-hotfix/testing';
 
 describe('@State', () => {
   it('should render all weekdays', async () => {

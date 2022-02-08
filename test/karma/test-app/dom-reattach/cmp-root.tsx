@@ -1,4 +1,4 @@
-import { Component, h, Host, Prop } from '@stencil/core';
+import { Component, h, Host, Prop } from 'stencil-hotfix';
 
 @Component({
   tag: 'dom-reattach',

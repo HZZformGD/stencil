@@ -1,6 +1,6 @@
 import type * as d from '../declarations';
 import { BUILD } from '@app-data';
-import { NODE_TYPES } from '@stencil/core/mock-doc';
+import { NODE_TYPES } from 'stencil-hotfix/mock-doc';
 import { CMP_FLAGS, HOST_FLAGS } from '@utils';
 import { PLATFORM_FLAGS } from './runtime-constants';
 import { plt, supportsShadow, getHostRef } from '@platform';

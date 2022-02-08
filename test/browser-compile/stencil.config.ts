@@ -10,12 +10,12 @@ export const config: Config = {
       copy: [
         {
           src: '../../../compiler/',
-          dest: './@stencil/core/compiler/',
+          dest: './stencil-hotfix/compiler/',
           warn: true,
         },
         {
           src: '../../../internal/',
-          dest: './@stencil/core/internal/',
+          dest: './stencil-hotfix/internal/',
           warn: true,
         },
         {

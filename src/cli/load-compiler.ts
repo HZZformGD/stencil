@@ -6,4 +6,4 @@ export const loadCoreCompiler = async (sys: CompilerSystem): Promise<CoreCompile
   return (globalThis as any).stencil;
 };
 
-export type CoreCompiler = typeof import('@stencil/core/compiler');
+export type CoreCompiler = typeof import('stencil-hotfix/compiler');

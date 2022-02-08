@@ -1,5 +1,5 @@
 import { EnvData } from './env-data';
-import { newSpecPage } from '@stencil/core/testing';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('env-data', () => {
   it('should be a test', async () => {

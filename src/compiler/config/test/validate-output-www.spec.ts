@@ -1,4 +1,4 @@
-import type * as d from '@stencil/core/declarations';
+import type * as d from 'stencil-hotfix/declarations';
 import { isOutputTargetCopy, isOutputTargetHydrate, isOutputTargetWww } from '../../output-targets/output-utils';
 import { validateConfig } from '../validate-config';
 import path from 'path';

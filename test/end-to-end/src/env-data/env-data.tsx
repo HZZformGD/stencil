@@ -1,4 +1,4 @@
-import { Component, h, Env, Host } from '@stencil/core';
+import { Component, h, Env, Host } from 'stencil-hotfix';
 
 @Component({
   tag: 'env-data',

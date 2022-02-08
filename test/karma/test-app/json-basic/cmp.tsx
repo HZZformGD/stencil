@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, h } from 'stencil-hotfix';
 import { foo } from './data.json';
 
 @Component({

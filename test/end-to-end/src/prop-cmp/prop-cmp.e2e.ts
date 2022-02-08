@@ -1,4 +1,4 @@
-import { newE2EPage, E2EPage } from '@stencil/core/testing';
+import { newE2EPage, E2EPage } from 'stencil-hotfix/testing';
 
 describe('@Prop', () => {
   let page: E2EPage;

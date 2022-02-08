@@ -1,5 +1,5 @@
-import { Component, Host, h } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Host, h } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('hydrate, shadow in shadow', () => {
   it('nested cmp-b w/ shadow/slot, root level text', async () => {

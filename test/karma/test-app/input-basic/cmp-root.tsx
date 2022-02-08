@@ -1,4 +1,4 @@
-import { Component, Element, h, Prop } from '@stencil/core';
+import { Component, Element, h, Prop } from 'stencil-hotfix';
 
 @Component({
   tag: 'input-basic-root',

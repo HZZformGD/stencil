@@ -1,4 +1,4 @@
-import { Build } from '@stencil/core';
+import { Build } from 'stencil-hotfix';
 
 export function printLifecycle(cmp: string, lifecycle: string) {
   const elm = document.createElement('div');

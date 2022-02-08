@@ -9,7 +9,7 @@ import { hasError, isPromise } from '@utils';
 import { hydrateFactory } from '@hydrate-factory';
 import { initializeWindow } from './window-initialize';
 import { inspectElement } from './inspect-element';
-import { MockWindow, serializeNodeToHtml } from '@stencil/core/mock-doc';
+import { MockWindow, serializeNodeToHtml } from 'stencil-hotfix/mock-doc';
 import { patchDomImplementation } from './patch-dom-implementation';
 import { relocateMetaCharset } from '../../compiler/html/relocate-meta-charset';
 import { removeUnusedStyles } from '../../compiler/html/remove-unused-styles';

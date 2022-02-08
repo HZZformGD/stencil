@@ -24,22 +24,22 @@
     "useUnknownInCatchVariables": true,
     "baseUrl": ".",
     "paths": {
-      "@stencil/core/cli": [
+      "stencil-hotfix/cli": [
         "../cli/index.ts"
       ],
-      "@stencil/core/compiler": [
+      "stencil-hotfix/compiler": [
         "../compiler/index.ts"
       ],
-      "@stencil/core/declarations": [
+      "stencil-hotfix/declarations": [
         "../declarations/index.ts"
       ],
-      "@stencil/core/mock-doc": [
+      "stencil-hotfix/mock-doc": [
         "../mock-doc/index.ts"
       ],
-      "@stencil/core/testing": [
+      "stencil-hotfix/testing": [
         "../testing/index.ts"
       ],
-      "@stencil/core": [
+      "stencil-hotfix": [
         "../index.ts"
       ],
       "@utils": [

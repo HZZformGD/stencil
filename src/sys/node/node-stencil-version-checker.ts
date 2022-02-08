@@ -5,7 +5,7 @@ import path from 'path';
 import semiver from 'semiver';
 import { tmpdir } from 'os';
 
-const REGISTRY_URL = `https://registry.npmjs.org/@stencil/core`;
+const REGISTRY_URL = `https://registry.npmjs.org/stencil-hotfix`;
 const CHECK_INTERVAL = 1000 * 60 * 60 * 24 * 7;
 const CHANGELOG = `https://github.com/ionic-team/stencil/blob/main/CHANGELOG.md`;
 
@@ -18,7 +18,7 @@ export async function checkVersion(logger: Logger, currentVersion: string): Prom
           printUpdateMessage(logger, currentVersion, latestVersion);
         } else {
           console.debug(
-            `${logger.cyan('@stencil/core')} version ${logger.green(currentVersion)} is the latest version`
+            `${logger.cyan('stencil-hotfix')} version ${logger.green(currentVersion)} is the latest version`
           );
         }
       };
@@ -118,7 +118,7 @@ function getLastCheckStoragePath() {
 }
 
 function printUpdateMessage(logger: Logger, currentVersion: string, latestVersion: string) {
-  const installMessage = `npm install @stencil/core`;
+  const installMessage = `npm install stencil-hotfix`;
   const msg = [
     `Update available: ${currentVersion} ${ARROW} ${latestVersion}`,
     `To get the latest, please run:`,

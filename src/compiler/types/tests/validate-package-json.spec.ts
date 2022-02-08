@@ -1,5 +1,5 @@
-import type * as d from '@stencil/core/declarations';
-import { mockBuildCtx, mockCompilerCtx, mockConfig } from '@stencil/core/testing';
+import type * as d from 'stencil-hotfix/declarations';
+import { mockBuildCtx, mockCompilerCtx, mockConfig } from 'stencil-hotfix/testing';
 import * as v from '../validate-build-package-json';
 import path from 'path';
 

@@ -1,5 +1,5 @@
-import { newSpecPage } from '@stencil/core/testing';
-import { Component, h } from '@stencil/core';
+import { newSpecPage } from 'stencil-hotfix/testing';
+import { Component, h } from 'stencil-hotfix';
 
 describe('scoped', () => {
   it('should add scoped classes', async () => {

@@ -43,17 +43,17 @@ describe('typescript resolve module', () => {
   it('resolve ./stencil-private.d.ts to full dts path when imported by internal dts url', async () => {
     const moduleName = './stencil-private';
     const containingFile = normalizePath(
-      sys.getLocalModulePath({ rootDir: config.rootDir, moduleId: '@stencil/core', path: 'internal/index.d.ts' })
+      sys.getLocalModulePath({ rootDir: config.rootDir, moduleId: 'stencil-hotfix', path: 'internal/index.d.ts' })
     );
-    expect(containingFile).toBe('/some/path/node_modules/@stencil/core/internal/index.d.ts');
+    expect(containingFile).toBe('/some/path/node_modules/stencil-hotfix/internal/index.d.ts');
 
-    await inMemoryFs.writeFile('/some/path/node_modules/@stencil/core/internal/stencil-private.d.ts', '');
+    await inMemoryFs.writeFile('/some/path/node_modules/stencil-hotfix/internal/stencil-private.d.ts', '');
 
     const r = patchedTsResolveModule(config, inMemoryFs, moduleName, containingFile);
     expect(r).toEqual({
       resolvedModule: {
         extension: ts.Extension.Dts,
-        resolvedFileName: '/some/path/node_modules/@stencil/core/internal/stencil-private.d.ts',
+        resolvedFileName: '/some/path/node_modules/stencil-hotfix/internal/stencil-private.d.ts',
         packageId: {
           name: moduleName,
           subModuleName: '',
@@ -64,14 +64,14 @@ describe('typescript resolve module', () => {
     });
   });
 
-  it('resolve @stencil/core/internal to internal dts url', () => {
-    const moduleName = '@stencil/core/internal';
+  it('resolve stencil-hotfix/internal to internal dts url', () => {
+    const moduleName = 'stencil-hotfix/internal';
     const containingFile = './cmp.tsx';
     const r = patchedTsResolveModule(config, inMemoryFs, moduleName, containingFile);
     expect(r).toEqual({
       resolvedModule: {
         extension: ts.Extension.Dts,
-        resolvedFileName: '/some/path/node_modules/@stencil/core/internal/index.d.ts',
+        resolvedFileName: '/some/path/node_modules/stencil-hotfix/internal/index.d.ts',
         packageId: {
           name: moduleName,
           subModuleName: '',
@@ -82,14 +82,14 @@ describe('typescript resolve module', () => {
     });
   });
 
-  it('resolve @stencil/core to internal dts url', () => {
-    const moduleName = '@stencil/core';
+  it('resolve stencil-hotfix to internal dts url', () => {
+    const moduleName = 'stencil-hotfix';
     const containingFile = './cmp.tsx';
     const r = patchedTsResolveModule(config, inMemoryFs, moduleName, containingFile);
     expect(r).toEqual({
       resolvedModule: {
         extension: ts.Extension.Dts,
-        resolvedFileName: '/some/path/node_modules/@stencil/core/internal/index.d.ts',
+        resolvedFileName: '/some/path/node_modules/stencil-hotfix/internal/index.d.ts',
         packageId: {
           name: moduleName,
           subModuleName: '',

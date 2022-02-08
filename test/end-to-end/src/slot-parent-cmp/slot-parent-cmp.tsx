@@ -1,4 +1,4 @@
-import { Component, Host, Prop, h } from '@stencil/core';
+import { Component, Host, Prop, h } from 'stencil-hotfix';
 
 @Component({
   tag: 'slot-parent-cmp',

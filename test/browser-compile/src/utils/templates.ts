@@ -6,7 +6,7 @@ export const templates = new Map<string, QuickTemplate>();
 
 templates.set(`hello-world.tsx`, {
   source: `
-import { Component } from '@stencil/core';
+import { Component } from 'stencil-hotfix';
 
 @Component({
   tag: 'hello-world'
@@ -27,7 +27,7 @@ export class HelloWorld {
 templates.set(`properties.tsx`, {
   source: `
 
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h } from 'stencil-hotfix';
 
 @Component({
   tag: 'my-name'
@@ -54,7 +54,7 @@ export class MyName {
 templates.set(`shadow-inline-styles.tsx`, {
   source: `
 
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h } from 'stencil-hotfix';
 
 @Component({
   tag: 'my-button',
@@ -82,7 +82,7 @@ export class MyButton {
 templates.set(`scoped-inline-styles.tsx`, {
   source: `
 
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h } from 'stencil-hotfix';
 
 @Component({
   tag: 'my-button',
@@ -110,7 +110,7 @@ export class MyButton {
 templates.set(`style-esm-import.tsx`, {
   source: `
 
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h } from 'stencil-hotfix';
 import styleEsmImport from './style-import.css';
 
 @Component({
@@ -138,7 +138,7 @@ export class MyButton {
 templates.set(`style-local-const.tsx`, {
   source: `
 
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h } from 'stencil-hotfix';
 const styleLocal = ':host { display: block; padding: 20px; background: #ddd; } :host::before { content: "styleLocal"; position: absolute; left: 0; top: 0; } button { font-size: 24px; background: maroon; color: white; font-weight: bold; }';
 
 @Component({
@@ -167,7 +167,7 @@ export class MyButton {
 templates.set(`style-url.tsx`, {
   source: `
 
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h } from 'stencil-hotfix';
 
 @Component({
   tag: 'my-button',
@@ -194,7 +194,7 @@ export class MyButton {
 templates.set(`scoped-style-url.tsx`, {
   source: `
 
-  import { Component, Prop, h } from '@stencil/core';
+  import { Component, Prop, h } from 'stencil-hotfix';
 
   @Component({
     tag: 'my-button',
@@ -222,7 +222,7 @@ templates.set(`scoped-style-url.tsx`, {
 templates.set(`shadow-modes.tsx`, {
   source: `
 
-import { Component, Prop, h, setMode } from '@stencil/core';
+import { Component, Prop, h, setMode } from 'stencil-hotfix';
 
 setMode(elm => {
   return elm.getAttribute('mode');
@@ -258,7 +258,7 @@ export class MyButton {
 templates.set(`scoped-modes.tsx`, {
   source: `
 
-import { Component, Prop, h, setMode } from '@stencil/core';
+import { Component, Prop, h, setMode } from 'stencil-hotfix';
 
 setMode(elm => {
   return elm.getAttribute('mode');

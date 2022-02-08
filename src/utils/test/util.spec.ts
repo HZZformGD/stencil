@@ -1,4 +1,4 @@
-import { mockConfig } from '@stencil/core/testing';
+import { mockConfig } from 'stencil-hotfix/testing';
 import * as util from '../util';
 
 describe('util', () => {

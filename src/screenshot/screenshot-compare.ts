@@ -1,4 +1,4 @@
-import type * as d from '@stencil/core/internal';
+import type * as d from 'stencil-hotfix/internal';
 import { normalizePath } from '@utils';
 import { writeScreenshotData, writeScreenshotImage } from './screenshot-fs';
 import { createHash } from 'crypto';

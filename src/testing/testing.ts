@@ -8,13 +8,13 @@ import type {
   OutputTargetWww,
   Testing,
   TestingRunOptions,
-} from '@stencil/core/internal';
+} from 'stencil-hotfix/internal';
 import { getAppScriptUrl, getAppStyleUrl } from './testing-utils';
 import { hasError } from '@utils';
 import { runJest } from './jest/jest-runner';
 import { runJestScreenshot } from './jest/jest-screenshot';
 import { startPuppeteerBrowser } from './puppeteer/puppeteer-browser';
-import { start } from '@stencil/core/dev-server';
+import { start } from 'stencil-hotfix/dev-server';
 import type * as puppeteer from 'puppeteer';
 
 export const createTesting = async (config: Config): Promise<Testing> => {

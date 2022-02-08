@@ -1,4 +1,4 @@
-import StencilTypes from '@stencil/core/compiler';
+import StencilTypes from 'stencil-hotfix/compiler';
 
 export const styleImports = new Map<string, string>();
 styleImports.set(

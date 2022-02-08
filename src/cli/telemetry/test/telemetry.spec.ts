@@ -2,7 +2,7 @@ import type * as d from '../../../declarations';
 import * as telemetry from '../telemetry';
 import * as shouldTrack from '../shouldTrack';
 import { createSystem } from '../../../compiler/sys/stencil-sys';
-import { mockLogger } from '@stencil/core/testing';
+import { mockLogger } from 'stencil-hotfix/testing';
 
 describe('telemetryBuildFinishedAction', () => {
   const config = {

@@ -136,7 +136,7 @@ export const createSystem = (c?: { logger?: Logger }) => {
     if (IS_WEB_WORKER_ENV) {
       return location.href;
     }
-    return sys.getRemoteModuleUrl({ moduleId: '@stencil/core', path: 'compiler/stencil.min.js' });
+    return sys.getRemoteModuleUrl({ moduleId: 'stencil-hotfix', path: 'compiler/stencil.min.js' });
   };
 
   const isSymbolicLink = async (_p: string) => false;

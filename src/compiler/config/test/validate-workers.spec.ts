@@ -1,6 +1,6 @@
-import type * as d from '@stencil/core/declarations';
+import type * as d from 'stencil-hotfix/declarations';
 import { validateConfig } from '../validate-config';
-import { mockLogger } from '@stencil/core/testing';
+import { mockLogger } from 'stencil-hotfix/testing';
 import path from 'path';
 
 describe('validate-workers', () => {

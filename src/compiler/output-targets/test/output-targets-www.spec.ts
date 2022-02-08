@@ -1,6 +1,6 @@
 import { doNotExpectFiles, expectFiles } from '../../../testing/testing-utils';
-import { Compiler, Config } from '@stencil/core/compiler';
-import { mockConfig } from '@stencil/core/testing';
+import { Compiler, Config } from 'stencil-hotfix/compiler';
+import { mockConfig } from 'stencil-hotfix/testing';
 import path from 'path';
 
 xdescribe('outputTarget, www', () => {

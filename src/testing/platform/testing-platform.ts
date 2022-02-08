@@ -1,4 +1,4 @@
-import type * as d from '@stencil/core/internal';
+import type * as d from 'stencil-hotfix/internal';
 import { cstrs, hostRefs, moduleLoaded, styles } from './testing-constants';
 import { flushAll, resetTaskQueue } from './testing-task-queue';
 import { win } from './testing-window';

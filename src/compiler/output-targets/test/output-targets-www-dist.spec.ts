@@ -1,7 +1,7 @@
-import type * as d from '@stencil/core/declarations';
+import type * as d from 'stencil-hotfix/declarations';
 import { doNotExpectFiles, expectFiles } from '../../../testing/testing-utils';
-import { Compiler, Config } from '@stencil/core/compiler';
-import { mockConfig } from '@stencil/core/testing';
+import { Compiler, Config } from 'stencil-hotfix/compiler';
+import { mockConfig } from 'stencil-hotfix/testing';
 import path from 'path';
 
 xdescribe('outputTarget, www / dist / docs', () => {

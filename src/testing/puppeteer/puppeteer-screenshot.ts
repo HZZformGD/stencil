@@ -5,7 +5,7 @@ import type {
   ScreenshotBuildData,
   ScreenshotDiff,
   ScreenshotOptions,
-} from '@stencil/core/internal';
+} from 'stencil-hotfix/internal';
 import { compareScreenshot } from '../../screenshot/screenshot-compare';
 import type * as pd from './puppeteer-declarations';
 import type * as puppeteer from 'puppeteer';

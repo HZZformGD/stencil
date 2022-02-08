@@ -1,5 +1,5 @@
-import { Component, Element, Method } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Element, Method } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('element', () => {
   it('allows the class to be set', async () => {

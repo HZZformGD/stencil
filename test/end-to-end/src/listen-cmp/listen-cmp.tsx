@@ -1,4 +1,4 @@
-import { Component, Listen, Prop } from '@stencil/core';
+import { Component, Listen, Prop } from 'stencil-hotfix';
 
 @Component({
   tag: 'listen-cmp',

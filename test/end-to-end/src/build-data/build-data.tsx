@@ -1,4 +1,4 @@
-import { Component, h, Build, Host } from '@stencil/core';
+import { Component, h, Build, Host } from 'stencil-hotfix';
 
 @Component({
   tag: 'build-data',

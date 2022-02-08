@@ -50,14 +50,14 @@ const normalizeDiagnostic = (compilerCtx: d.CompilerCtx, diagnostic: d.Diagnosti
   if (diagnostic.messageText) {
     if (diagnostic.messageText.includes(`Cannot find name 'h'`)) {
       diagnostic.header = `Missing "h" import for JSX types`;
-      diagnostic.messageText = `In order to load accurate JSX types for components, the "h" function must be imported from "@stencil/core" by each component using JSX. For example: import { Component, h } from '@stencil/core';`;
+      diagnostic.messageText = `In order to load accurate JSX types for components, the "h" function must be imported from "stencil-hotfix" by each component using JSX. For example: import { Component, h } from 'stencil-hotfix';`;
 
       try {
         const sourceText = compilerCtx.fs.readFileSync(diagnostic.absFilePath);
         const srcLines = splitLineBreaks(sourceText);
         for (let i = 0; i < srcLines.length; i++) {
           const srcLine = srcLines[i];
-          if (srcLine.includes('@stencil/core')) {
+          if (srcLine.includes('stencil-hotfix')) {
             const msgLines: d.PrintLine[] = [];
 
             const beforeLineIndex = i - 1;

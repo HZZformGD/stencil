@@ -1,8 +1,8 @@
-import type { EventInitDict, HostElement, SerializedEvent } from '@stencil/core/internal';
+import type { EventInitDict, HostElement, SerializedEvent } from 'stencil-hotfix/internal';
 import type * as pd from './puppeteer-declarations';
 import type * as puppeteer from 'puppeteer';
 import { EventSpy, addE2EListener, waitForEvent } from './puppeteer-events';
-import { MockHTMLElement, cloneAttributes, parseHtmlToFragment } from '@stencil/core/mock-doc';
+import { MockHTMLElement, cloneAttributes, parseHtmlToFragment } from 'stencil-hotfix/mock-doc';
 
 export class E2EElement extends MockHTMLElement implements pd.E2EElementInternal {
   private _queuedActions: ElementAction[] = [];

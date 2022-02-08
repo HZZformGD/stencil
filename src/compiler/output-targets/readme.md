@@ -17,7 +17,7 @@ Stencil is able to generate components into various formats so they can be best 
 
 `native`: Lazy-loaded components split the host custom element and the component implementation apart. A "native" component is a traditional custom element in that the instance and host element are the same. 
 
-`custom-element`: Individual custom elements packaged up into stand-alone, self-contained code. Each component imports shared runtime from `@stencil/core`. Opposite of lazy-loaded components that define themselves and load on deman, the custom elements builds must be imported and defined by the consumer, and any lazy-loaded depends on the consumer's bundling methods.
+`custom-element`: Individual custom elements packaged up into stand-alone, self-contained code. Each component imports shared runtime from `stencil-hotfix`. Opposite of lazy-loaded components that define themselves and load on deman, the custom elements builds must be imported and defined by the consumer, and any lazy-loaded depends on the consumer's bundling methods.
 
 
 ## Output Target Types

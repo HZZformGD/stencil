@@ -1,5 +1,5 @@
-import { Component, Element, setErrorHandler, Host, Prop, State, forceUpdate, getRenderingRef, h } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Element, setErrorHandler, Host, Prop, State, forceUpdate, getRenderingRef, h } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('render-vdom', () => {
   describe('build conditionals', () => {

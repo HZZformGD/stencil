@@ -1,5 +1,5 @@
-import { Component, h } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, h } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('hydrate style element', () => {
   it('style element text', async () => {

@@ -1,4 +1,4 @@
-import { Host, Component, h } from '@stencil/core';
+import { Host, Component, h } from 'stencil-hotfix';
 import output from './output';
 
 @Component({

@@ -1,5 +1,5 @@
-import { Component, Host, h, State } from '@stencil/core';
-import type StencilTypes from '@stencil/core/compiler';
+import { Component, Host, h, State } from 'stencil-hotfix';
+import type StencilTypes from 'stencil-hotfix/compiler';
 import type TypeScriptTypes from 'typescript';
 import type RollupTypes from 'rollup';
 import { cssTemplatePlugin } from '../../utils/css-template-plugin';
@@ -322,8 +322,8 @@ export class AppRoot {
               <span>Core:</span>
               <select ref={(el) => (this.coreImportPath = el)} onInput={this.compile.bind(this)}>
                 <option value="null">null</option>
-                <option value="@stencil/core/internal/client">@stencil/core/internal/client</option>
-                <option value="@stencil/core/internal/testing">@stencil/core/internal/testing</option>
+                <option value="stencil-hotfix/internal/client">stencil-hotfix/internal/client</option>
+                <option value="stencil-hotfix/internal/testing">stencil-hotfix/internal/testing</option>
               </select>
             </label>
             <label>

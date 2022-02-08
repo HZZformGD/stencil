@@ -1,4 +1,4 @@
-import { Component, Event, EventEmitter, Prop, h } from '@stencil/core';
+import { Component, Event, EventEmitter, Prop, h } from 'stencil-hotfix';
 import { CarData } from './car-data';
 
 /**

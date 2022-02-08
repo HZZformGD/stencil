@@ -127,7 +127,7 @@ async function setupHydrateApp(devServerConfig: d.DevServerConfig, serverCtx: d.
 
   if (serverCtx.prerenderConfig == null && isString(devServerConfig.prerenderConfig)) {
     const compilerPath = path.join(devServerConfig.devServerDir, '..', 'compiler', 'stencil.js');
-    const compiler: typeof import('@stencil/core/compiler') = require(compilerPath);
+    const compiler: typeof import('stencil-hotfix/compiler') = require(compilerPath);
     const prerenderConfigResults = compiler.nodeRequire(devServerConfig.prerenderConfig);
     diagnostics.push(...prerenderConfigResults.diagnostics);
     if (prerenderConfigResults.module && prerenderConfigResults.module.config) {

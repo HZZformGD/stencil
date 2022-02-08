@@ -1,4 +1,4 @@
-import { Component, Event, EventEmitter, Method } from '@stencil/core';
+import { Component, Event, EventEmitter, Method } from 'stencil-hotfix';
 
 @Component({
   tag: 'event-cmp',

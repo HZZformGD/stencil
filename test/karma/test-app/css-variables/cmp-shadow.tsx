@@ -1,4 +1,4 @@
-import { Component, h, Host, State } from '@stencil/core';
+import { Component, h, Host, State } from 'stencil-hotfix';
 
 @Component({
   tag: 'css-variables-shadow-dom',

@@ -17,7 +17,7 @@ export const taskWatch = async (coreCompiler: CoreCompiler, config: Config) => {
 
     if (config.flags.serve) {
       const devServerPath = config.sys.getDevServerExecutingPath();
-      const { start }: typeof import('@stencil/core/dev-server') = await config.sys.dynamicImport(devServerPath);
+      const { start }: typeof import('stencil-hotfix/dev-server') = await config.sys.dynamicImport(devServerPath);
       devServer = await start(config.devServer, config.logger, watcher);
     }
 

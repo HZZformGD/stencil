@@ -1,4 +1,4 @@
-import { NODE_TYPES } from '@stencil/core/mock-doc';
+import { NODE_TYPES } from 'stencil-hotfix/mock-doc';
 
 export function toEqualAttribute(elm: HTMLElement, expectAttrName: string, expectAttrValue: string) {
   if (!elm) {

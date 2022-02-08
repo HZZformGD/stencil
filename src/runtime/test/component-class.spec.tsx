@@ -1,4 +1,4 @@
-import { Component, Element } from '@stencil/core';
+import { Component, Element } from 'stencil-hotfix';
 
 describe('component class only', () => {
   it('raw class without newSpecPage', async () => {

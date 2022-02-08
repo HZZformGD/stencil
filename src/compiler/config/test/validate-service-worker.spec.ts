@@ -1,5 +1,5 @@
-import type * as d from '@stencil/core/declarations';
-import { mockStencilSystem } from '@stencil/core/testing';
+import type * as d from 'stencil-hotfix/declarations';
+import { mockStencilSystem } from 'stencil-hotfix/testing';
 import { validateServiceWorker } from '../validate-service-worker';
 
 describe('validateServiceWorker', () => {

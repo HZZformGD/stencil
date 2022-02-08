@@ -17,7 +17,7 @@ import {
   TranspileResults,
   PrerenderStartOptions,
   PrerenderResults,
-} from '@stencil/core/internal';
+} from 'stencil-hotfix/internal';
 
 /**
  * The `transpile()` function inputs source code as a string, with various options
@@ -105,7 +105,7 @@ export declare const optimizeJs: (jsInput?: OptimizeJsInput) => Promise<Optimize
 export declare const path: PlatformPath;
 
 /**
- * Current version of `@stencil/core`.
+ * Current version of `stencil-hotfix`.
  */
 export declare const version: string;
 

@@ -1,4 +1,4 @@
-import type { EventInitDict, EventSpy, ScreenshotDiff, ScreenshotOptions } from '@stencil/core/internal';
+import type { EventInitDict, EventSpy, ScreenshotDiff, ScreenshotOptions } from 'stencil-hotfix/internal';
 import type {
   ClickOptions,
   HTTPResponse as PuppeteerHTTPResponse,

@@ -1,4 +1,4 @@
-import type * as d from '@stencil/core/internal';
+import type * as d from 'stencil-hotfix/internal';
 import { isOutputTargetDistLazy, isOutputTargetWww } from '../compiler/output-targets/output-utils';
 import { join, relative } from 'path';
 

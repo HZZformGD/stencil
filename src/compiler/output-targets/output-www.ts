@@ -1,7 +1,7 @@
 import type * as d from '../../declarations';
 import { addScriptDataAttribute } from '../html/add-script-attr';
 import { catchError, flatOne, unique } from '@utils';
-import { cloneDocument, serializeNodeToHtml } from '@stencil/core/mock-doc';
+import { cloneDocument, serializeNodeToHtml } from 'stencil-hotfix/mock-doc';
 import { generateEs5DisabledMessage } from '../app-core/app-es5-disabled';
 import { generateHashedCopy } from '../output-targets/copy/hashed-copy';
 import { getAbsoluteBuildDir } from '../html/html-utils';

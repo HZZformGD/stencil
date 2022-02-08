@@ -1,5 +1,5 @@
-import { MockResponse, mockFetch, newSpecPage, MockHeaders } from '@stencil/core/testing';
-import { Component, Prop, Host, h } from '@stencil/core';
+import { MockResponse, mockFetch, newSpecPage, MockHeaders } from 'stencil-hotfix/testing';
+import { Component, Prop, Host, h } from 'stencil-hotfix';
 
 describe('fetch', () => {
   afterEach(() => {

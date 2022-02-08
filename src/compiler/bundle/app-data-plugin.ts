@@ -33,7 +33,7 @@ export const appDataPlugin = (
     resolveId(id: string, importer: string | undefined): ResolveIdResult {
       if (id === STENCIL_APP_DATA_ID || id === STENCIL_APP_GLOBALS_ID) {
         if (platform === 'worker') {
-          this.error('@stencil/core packages cannot be imported from a worker.');
+          this.error('stencil-hotfix packages cannot be imported from a worker.');
         }
 
         if (platform === 'hydrate' || STENCIL_APP_GLOBALS_ID) {

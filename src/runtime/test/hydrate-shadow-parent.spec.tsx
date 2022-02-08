@@ -1,5 +1,5 @@
-import { Component, Host, h } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Host, h } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('hydrate, shadow parent', () => {
   it('slot depth 1, text w/out vdom', async () => {

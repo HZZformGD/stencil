@@ -1,4 +1,4 @@
-import { newE2EPage } from '@stencil/core/testing';
+import { newE2EPage } from 'stencil-hotfix/testing';
 
 describe('dom interaction e2e tests', () => {
   it('should click button in shadow root', async () => {

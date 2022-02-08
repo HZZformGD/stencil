@@ -7,7 +7,7 @@ import {
   minifyStyleElements,
   removeStencilScripts,
 } from './prerender-optimize';
-import { createDocument, serializeNodeToHtml } from '@stencil/core/mock-doc';
+import { createDocument, serializeNodeToHtml } from 'stencil-hotfix/mock-doc';
 
 export const generateTemplateHtml = async (
   config: d.Config,

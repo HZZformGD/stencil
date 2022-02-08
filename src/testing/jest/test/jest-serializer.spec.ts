@@ -1,5 +1,5 @@
 import { HtmlSerializer } from '../jest-serializer';
-import { MockDocument } from '@stencil/core/mock-doc';
+import { MockDocument } from 'stencil-hotfix/mock-doc';
 
 describe('serialize node', () => {
   let doc: MockDocument;

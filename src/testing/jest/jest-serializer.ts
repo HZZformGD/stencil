@@ -1,4 +1,4 @@
-import { MockNode, serializeNodeToHtml } from '@stencil/core/mock-doc';
+import { MockNode, serializeNodeToHtml } from 'stencil-hotfix/mock-doc';
 
 const print = (val: HTMLElement | MockNode): string => {
   return serializeNodeToHtml(val, {

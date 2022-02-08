@@ -1,7 +1,7 @@
-import type * as d from '@stencil/core/declarations';
+import type * as d from 'stencil-hotfix/declarations';
 import { generateServiceWorkerUrl } from '../service-worker-util';
 import { validateConfig } from '../../config/validate-config';
-import { mockConfig } from '@stencil/core/testing';
+import { mockConfig } from 'stencil-hotfix/testing';
 
 describe('generateServiceWorkerUrl', () => {
   let userConfig: d.Config;

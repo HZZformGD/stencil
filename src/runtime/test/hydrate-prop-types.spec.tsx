@@ -1,5 +1,5 @@
-import { Component, Host, Prop, h } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Host, Prop, h } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('hydrate prop types', () => {
   it('number', async () => {

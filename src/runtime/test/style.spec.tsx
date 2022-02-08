@@ -1,5 +1,5 @@
-import { Component, setMode, getMode } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, setMode, getMode } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('style', () => {
   it('get style string', async () => {

@@ -1,7 +1,7 @@
-import type * as d from '@stencil/core/declarations';
+import type * as d from 'stencil-hotfix/declarations';
 import { convertDecoratorsToStatic } from '../decorators-to-static/convert-decorators';
 import { convertStaticToMeta } from '../static-to-meta/visitor';
-import { mockBuildCtx, mockCompilerCtx, mockConfig, mockStencilSystem } from '@stencil/core/testing';
+import { mockBuildCtx, mockCompilerCtx, mockConfig, mockStencilSystem } from 'stencil-hotfix/testing';
 import ts from 'typescript';
 import { updateModule } from '../static-to-meta/parse-static';
 import { getScriptTarget } from '../transform-utils';
@@ -78,7 +78,7 @@ export function transpileModule(
   const buildCtx = mockBuildCtx(config, compilerCtx);
 
   const transformOpts: d.TransformOptions = {
-    coreImportPath: '@stencil/core',
+    coreImportPath: 'stencil-hotfix',
     componentExport: 'lazy',
     componentMetadata: null,
     currentDirectory: '/',

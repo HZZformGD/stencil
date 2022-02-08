@@ -25,8 +25,8 @@
     "useUnknownInCatchVariables": true,
     "baseUrl": ".",
     "paths": {
-      "@stencil/core": ["../../../internal"],
-      "@stencil/core/internal": ["../../../internal"]
+      "stencil-hotfix": ["../../../internal"],
+      "stencil-hotfix/internal": ["../../../internal"]
     }
   },
   "include": [

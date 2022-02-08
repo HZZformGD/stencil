@@ -1,4 +1,4 @@
-import { Component, Host, Prop, State, h } from '@stencil/core';
+import { Component, Host, Prop, State, h } from 'stencil-hotfix';
 import { sayHello } from '../../helpers/utils';
 
 @Component({

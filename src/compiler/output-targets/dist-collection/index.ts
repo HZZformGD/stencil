@@ -87,7 +87,7 @@ const serializeCollectionManifest = (config: d.Config, compilerCtx: d.CompilerCt
       .filter((mod) => !mod.isCollectionDependency && mod.cmps.length > 0)
       .map((mod) => relative(config.srcDir, mod.jsFilePath)),
     compiler: {
-      name: '@stencil/core',
+      name: 'stencil-hotfix',
       version,
       typescriptVersion,
     },

@@ -145,7 +145,7 @@ const getComponentBoilerplate = (tagName: string, hasStyle: boolean) => {
   decorator.push(`  shadow: true,`);
   decorator.push(`}`);
 
-  return `import { Component, Host, h } from '@stencil/core';
+  return `import { Component, Host, h } from 'stencil-hotfix';
 
 @Component(${decorator.join('\n')})
 export class ${toPascalCase(tagName)} {
@@ -175,7 +175,7 @@ const getStyleUrlBoilerplate = () =>
  * Get the boilerplate for a spec test.
  */
 const getSpecTestBoilerplate = (tagName: string) =>
-  `import { newSpecPage } from '@stencil/core/testing';
+  `import { newSpecPage } from 'stencil-hotfix/testing';
 import { ${toPascalCase(tagName)} } from '../${tagName}';
 
 describe('${tagName}', () => {
@@ -199,7 +199,7 @@ describe('${tagName}', () => {
  * Get the boilerplate for an E2E test.
  */
 const getE2eTestBoilerplate = (name: string) =>
-  `import { newE2EPage } from '@stencil/core/testing';
+  `import { newE2EPage } from 'stencil-hotfix/testing';
 
 describe('${name}', () => {
   it('renders', async () => {

@@ -1,4 +1,4 @@
-import type { SerializedEvent } from '@stencil/core/internal';
+import type { SerializedEvent } from 'stencil-hotfix/internal';
 import type * as pd from './puppeteer-declarations';
 import type * as puppeteer from 'puppeteer';
 

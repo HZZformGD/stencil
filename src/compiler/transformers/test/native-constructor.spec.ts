@@ -1,5 +1,5 @@
-import { mockCompilerCtx } from '@stencil/core/testing';
-import * as d from '@stencil/core/declarations';
+import { mockCompilerCtx } from 'stencil-hotfix/testing';
+import * as d from 'stencil-hotfix/declarations';
 import { transpileModule } from './transpile';
 import { nativeComponentTransform } from '../component-native/tranform-to-native-component';
 
@@ -10,7 +10,7 @@ describe('nativeComponentTransform', () => {
   beforeEach(() => {
     compilerCtx = mockCompilerCtx();
     transformOpts = {
-      coreImportPath: '@stencil/core',
+      coreImportPath: 'stencil-hotfix',
       componentExport: 'customelement',
       componentMetadata: null,
       currentDirectory: '/',
@@ -37,7 +37,7 @@ describe('nativeComponentTransform', () => {
       const transpiledModule = transpileModule(code, null, compilerCtx, null, [], [transformer]);
 
       expect(transpiledModule.outputText).toContain(
-        `import { HTMLElement, attachShadow as __stencil_attachShadow, defineCustomElement as __stencil_defineCustomElement } from "@stencil/core";`
+        `import { HTMLElement, attachShadow as __stencil_attachShadow, defineCustomElement as __stencil_defineCustomElement } from "stencil-hotfix";`
       );
       expect(transpiledModule.outputText).toContain(`this.__attachShadow()`);
     });
@@ -62,7 +62,7 @@ describe('nativeComponentTransform', () => {
       const transpiledModule = transpileModule(code, null, compilerCtx, null, [], [transformer]);
 
       expect(transpiledModule.outputText).toContain(
-        `import { HTMLElement, attachShadow as __stencil_attachShadow, defineCustomElement as __stencil_defineCustomElement } from "@stencil/core";`
+        `import { HTMLElement, attachShadow as __stencil_attachShadow, defineCustomElement as __stencil_defineCustomElement } from "stencil-hotfix";`
       );
       expect(transpiledModule.outputText).toContain(`this.__attachShadow()`);
     });

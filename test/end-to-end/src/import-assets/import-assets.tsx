@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h } from 'stencil-hotfix';
 import myText from './assets/my-text.txt';
 import whateverHtml from './assets/whatever.html?format=text';
 import ionicSvgUrl from './assets/ionic.svg';

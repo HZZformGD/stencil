@@ -1,5 +1,5 @@
-import { Component, Element, Host, Method, Prop, Watch, h, forceUpdate } from '@stencil/core';
-import { newSpecPage } from '@stencil/core/testing';
+import { Component, Element, Host, Method, Prop, Watch, h, forceUpdate } from 'stencil-hotfix';
+import { newSpecPage } from 'stencil-hotfix/testing';
 
 describe('lifecycle sync', () => {
   it('should fire connected/disconnected when removed', async () => {

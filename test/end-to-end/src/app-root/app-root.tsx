@@ -1,4 +1,4 @@
-import { Component, State, h, Host, Listen } from '@stencil/core';
+import { Component, State, h, Host, Listen } from 'stencil-hotfix';
 import _ from 'lodash';
 import _es from 'lodash-es';
 import videojs from 'video.js';

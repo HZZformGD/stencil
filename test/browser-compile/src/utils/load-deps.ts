@@ -1,18 +1,18 @@
 export const loadDeps = async (resolveLookup: Map<string, string>, fs: Map<string, string>) => {
-  resolveLookup.set('@stencil/core/internal/client', '/@stencil/core/internal/client/index.js');
-  resolveLookup.set('@stencil/core/internal/app-data', '/@stencil/core/internal/app-data/index.js');
+  resolveLookup.set('stencil-hotfix/internal/client', '/stencil-hotfix/internal/client/index.js');
+  resolveLookup.set('stencil-hotfix/internal/app-data', '/stencil-hotfix/internal/app-data/index.js');
 
-  await loadDep('/@stencil/core/compiler/stencil.js');
+  await loadDep('/stencil-hotfix/compiler/stencil.js');
 
   const rollupDep = stencil.dependencies.find((dep: any) => dep.name === 'rollup');
   await loadDep(`https://cdn.jsdelivr.net/npm/rollup@${rollupDep.version}/dist/rollup.browser.js`);
 
   const fetchResults = await Promise.all([
-    await fetch('/@stencil/core/internal/client/index.js'),
-    await fetch('/@stencil/core/internal/client/shadow-css.js'),
-    await fetch('/@stencil/core/internal/app-data/index.js'),
-    await fetch('/@stencil/core/internal/client/css-shim.js'),
-    await fetch('/@stencil/core/internal/client/dom.js'),
+    await fetch('/stencil-hotfix/internal/client/index.js'),
+    await fetch('/stencil-hotfix/internal/client/shadow-css.js'),
+    await fetch('/stencil-hotfix/internal/app-data/index.js'),
+    await fetch('/stencil-hotfix/internal/client/css-shim.js'),
+    await fetch('/stencil-hotfix/internal/client/dom.js'),
   ]);
 
   await Promise.all([

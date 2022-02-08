@@ -139,7 +139,7 @@ export const tsResolveNodeModule = (
         resolvedFileName: normalizePath(
           config.sys.getLocalModulePath({
             rootDir: config.rootDir,
-            moduleId: '@stencil/core',
+            moduleId: 'stencil-hotfix',
             path: 'internal/index.d.ts',
           })
         ),

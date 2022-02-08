@@ -1,4 +1,4 @@
-import type { E2EProcessEnv, JestEnvironmentGlobal } from '@stencil/core/internal';
+import type { E2EProcessEnv, JestEnvironmentGlobal } from 'stencil-hotfix/internal';
 import { connectBrowser, disconnectBrowser, newBrowserPage } from '../puppeteer/puppeteer-browser';
 
 export function createJestPuppeteerEnvironment() {

@@ -1,4 +1,4 @@
-import type { Config, E2EProcessEnv } from '@stencil/core/internal';
+import type { Config, E2EProcessEnv } from 'stencil-hotfix/internal';
 import type * as puppeteer from 'puppeteer';
 
 export async function startPuppeteerBrowser(config: Config) {

@@ -39,7 +39,7 @@ export const setPackageVersionByContent = (pkgVersions: Map<string, string>, pkg
 
 export const isLocalModule = (p: string) => p.startsWith('.') || p.startsWith('/');
 
-export const isStencilCoreImport = (p: string) => p.startsWith('@stencil/core');
+export const isStencilCoreImport = (p: string) => p.startsWith('stencil-hotfix');
 
 export const shouldFetchModule = (p: string) => IS_FETCH_ENV && IS_BROWSER_ENV && isNodeModulePath(p);
 

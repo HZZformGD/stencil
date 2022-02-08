@@ -1,6 +1,6 @@
-import type * as d from '@stencil/core/declarations';
-import { Compiler, Config } from '@stencil/core/compiler';
-import { mockConfig } from '@stencil/core/testing';
+import type * as d from 'stencil-hotfix/declarations';
+import { Compiler, Config } from 'stencil-hotfix/compiler';
+import { mockConfig } from 'stencil-hotfix/testing';
 import path from 'path';
 
 xdescribe('service worker', () => {

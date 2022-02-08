@@ -1,6 +1,6 @@
-import type * as d from '@stencil/core/declarations';
+import type * as d from 'stencil-hotfix/declarations';
 import { getCssImports, isCssNodeModule, isLocalCssImport, replaceImportDeclarations } from '../css-imports';
-import { mockBuildCtx, mockConfig, mockCompilerCtx } from '@stencil/core/testing';
+import { mockBuildCtx, mockConfig, mockCompilerCtx } from 'stencil-hotfix/testing';
 import { normalizePath } from '@utils';
 import path from 'path';
 

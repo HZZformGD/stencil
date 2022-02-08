@@ -1,4 +1,4 @@
-import { Component } from '@stencil/core';
+import { Component } from 'stencil-hotfix';
 
 @Component({
   tag: 'shadow-dom-slot-basic',

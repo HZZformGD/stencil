@@ -1,6 +1,6 @@
-import type * as d from '@stencil/core/declarations';
+import type * as d from 'stencil-hotfix/declarations';
 import { buildJestArgv } from '../jest-config';
-import { mockConfig } from '@stencil/core/testing';
+import { mockConfig } from 'stencil-hotfix/testing';
 import { parseFlags } from '../../../cli/parse-flags';
 import path from 'path';
 

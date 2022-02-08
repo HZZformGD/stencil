@@ -14,7 +14,7 @@ export const generateDocData = async (
   return {
     timestamp: getBuildTimestamp(),
     compiler: {
-      name: '@stencil/core',
+      name: 'stencil-hotfix',
       version,
       typescriptVersion,
     },

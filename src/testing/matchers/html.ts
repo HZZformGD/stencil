@@ -1,5 +1,5 @@
-import type * as d from '@stencil/core/internal';
-import { NODE_TYPES, parseHtmlToFragment, serializeNodeToHtml } from '@stencil/core/mock-doc';
+import type * as d from 'stencil-hotfix/internal';
+import { NODE_TYPES, parseHtmlToFragment, serializeNodeToHtml } from 'stencil-hotfix/mock-doc';
 
 export function toEqualHtml(input: string | HTMLElement | ShadowRoot, shouldEqual: string) {
   return compareHtml(input, shouldEqual, true);

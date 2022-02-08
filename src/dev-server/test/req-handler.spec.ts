@@ -1,9 +1,9 @@
-import type * as d from '@stencil/core/declarations';
+import type * as d from 'stencil-hotfix/declarations';
 import { appendDevServerClientIframe } from '../serve-file';
 import { createRequestHandler } from '../request-handler';
 import { createServerContext } from '../server-context';
 import { createSystem } from '../../compiler/sys/stencil-sys';
-import { mockConfig } from '@stencil/core/testing';
+import { mockConfig } from 'stencil-hotfix/testing';
 import { normalizePath } from '@utils';
 import { validateConfig } from '../../compiler/config/validate-config';
 import { validateDevServer } from '../../compiler/config/validate-dev-server';

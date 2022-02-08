@@ -14,10 +14,10 @@ describe('resolve modules', () => {
   });
 
   it('isStencilCoreImport', () => {
-    expect(isStencilCoreImport('@stencil/core')).toBe(true);
-    expect(isStencilCoreImport('@stencil/core/internal')).toBe(true);
-    expect(isStencilCoreImport('@stencil/core/internal/client')).toBe(true);
-    expect(isStencilCoreImport('@stencil/core/internal/client/index.mjs')).toBe(true);
+    expect(isStencilCoreImport('stencil-hotfix')).toBe(true);
+    expect(isStencilCoreImport('stencil-hotfix/internal')).toBe(true);
+    expect(isStencilCoreImport('stencil-hotfix/internal/client')).toBe(true);
+    expect(isStencilCoreImport('stencil-hotfix/internal/client/index.mjs')).toBe(true);
     expect(isStencilCoreImport('lodash')).toBe(false);
     expect(isStencilCoreImport('@ionic/core')).toBe(false);
   });

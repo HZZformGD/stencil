@@ -1,4 +1,4 @@
-import type { E2EProcessEnv, EmulateConfig, HostElement, JestEnvironmentGlobal } from '@stencil/core/internal';
+import type { E2EProcessEnv, EmulateConfig, HostElement, JestEnvironmentGlobal } from 'stencil-hotfix/internal';
 import type {
   E2EPage,
   E2EPageInternal,

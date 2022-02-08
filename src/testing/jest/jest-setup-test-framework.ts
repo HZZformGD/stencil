@@ -1,7 +1,7 @@
-import type * as d from '@stencil/core/internal';
+import type * as d from 'stencil-hotfix/internal';
 import { BUILD, Env } from '@app-data';
 import { expectExtend } from '../matchers';
-import { setupGlobal, teardownGlobal } from '@stencil/core/mock-doc';
+import { setupGlobal, teardownGlobal } from 'stencil-hotfix/mock-doc';
 import { setupMockFetch } from '../mock-fetch';
 import { HtmlSerializer } from './jest-serializer';
 import { resetBuildConditionals } from '../reset-build-conditionals';
@@ -10,7 +10,7 @@ import {
   stopAutoApplyChanges,
   modeResolutionChain,
   setErrorHandler,
-} from '@stencil/core/internal/testing';
+} from 'stencil-hotfix/internal/testing';
 
 declare const global: d.JestEnvironmentGlobal;
 

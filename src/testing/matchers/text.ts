@@ -1,4 +1,4 @@
-import { NODE_TYPES } from '@stencil/core/mock-doc';
+import { NODE_TYPES } from 'stencil-hotfix/mock-doc';
 
 export function toEqualText(input: HTMLElement | string, expectTextContent: string) {
   if (input == null) {

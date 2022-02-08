@@ -28,7 +28,7 @@ const generateTypesOutput = async (
   const srcDtsFiles = srcDirItems.filter((srcItem) => srcItem.isFile && isDtsFile(srcItem.absPath));
 
   // Copy .d.ts files from src to dist
-  // In addition, all references to @stencil/core are replaced
+  // In addition, all references to stencil-hotfix are replaced
   let distDtsFilePath: string;
   await Promise.all(
     srcDtsFiles.map(async (srcDtsFile) => {

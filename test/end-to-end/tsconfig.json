@@ -24,13 +24,13 @@
     "useUnknownInCatchVariables": true,
     "baseUrl": ".",
     "paths": {
-      "@stencil/core": [
+      "stencil-hotfix": [
         "../../internal"
       ],
-      "@stencil/core/internal": [
+      "stencil-hotfix/internal": [
         "../../internal"
       ],
-      "@stencil/core/testing": [
+      "stencil-hotfix/testing": [
         "../../testing"
       ],
       "@path-alias": [

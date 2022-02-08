@@ -572,7 +572,7 @@ export type PageReloadStrategy = 'hmr' | 'pageReload' | null;
  * config file path using the `prerenderConfig` property, such as:
  *
  * ```tsx
- * import { Config } from '@stencil/core';
+ * import { Config } from 'stencil-hotfix';
  * export const config: Config = {
  *   outputTargets: [
  *     {
@@ -588,7 +588,7 @@ export type PageReloadStrategy = 'hmr' | 'pageReload' | null;
  * the `PrerenderConfig` interface.
  *
  * ```tsx
- * import { PrerenderConfig } from '@stencil/core';
+ * import { PrerenderConfig } from 'stencil-hotfix';
  * export const config: PrerenderConfig = {
  *   ...
  * };
@@ -2322,8 +2322,8 @@ export interface TranspileOptions {
    */
   componentMetadata?: 'runtimestatic' | 'compilerstatic' | string | undefined;
   /**
-   * The actual internal import path for any `@stencil/core` imports.
-   * Default is `@stencil/core/internal/client`.
+   * The actual internal import path for any `stencil-hotfix` imports.
+   * Default is `stencil-hotfix/internal/client`.
    */
   coreImportPath?: string;
   /**

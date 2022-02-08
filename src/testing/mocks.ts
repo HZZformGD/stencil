@@ -1,10 +1,10 @@
-import type { BuildCtx, Cache, CompilerCtx, CompilerSystem, Config } from '@stencil/core/internal';
+import type { BuildCtx, Cache, CompilerCtx, CompilerSystem, Config } from 'stencil-hotfix/internal';
 import { BuildContext } from '../compiler/build/build-ctx';
 import { Cache as CompilerCache } from '../compiler/cache';
 import { createInMemoryFs } from '../compiler/sys/in-memory-fs';
 import { createTestingSystem } from './testing-sys';
-import { createWorkerContext } from '@stencil/core/compiler';
-import { MockWindow } from '@stencil/core/mock-doc';
+import { createWorkerContext } from 'stencil-hotfix/compiler';
+import { MockWindow } from 'stencil-hotfix/mock-doc';
 import { TestingLogger } from './testing-logger';
 import path from 'path';
 import { noop } from '@utils';

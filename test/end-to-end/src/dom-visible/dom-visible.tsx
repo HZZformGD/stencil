@@ -1,4 +1,4 @@
-import { Component, State, h } from '@stencil/core';
+import { Component, State, h } from 'stencil-hotfix';
 
 @Component({
   tag: 'dom-visible',
