@@ -1,3 +1,17 @@
+## 🐟 [2.13.1](https://github.com/ionic-team/stencil/compare/v2.13.0...v2.13.1) (2022-02-08)
+
+
+### Bug Fixes
+
+* dynamic import using vite ([19951ae](https://github.com/ionic-team/stencil/commit/19951ae24921103d2c673233709aeca8231fd673))
+
+
+### Features
+
+* **typescript:** typescript 4.5 support ([#3205](https://github.com/ionic-team/stencil/issues/3205)) ([806012e](https://github.com/ionic-team/stencil/commit/806012ebc38f611ccb7a687938af839577c85ea8))
+
+
+
 # 🍣 [2.13.0](https://github.com/ionic-team/stencil/compare/v2.12.1...v2.13.0) (2022-01-24)
 
 
