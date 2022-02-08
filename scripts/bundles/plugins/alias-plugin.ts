@@ -9,11 +9,11 @@ import { join } from 'path';
  */
 export function aliasPlugin(opts: BuildOptions): Plugin {
   const alias = new Map([
-    ['@app-data', '@stencil/core/internal/app-data'],
-    ['@app-globals', '@stencil/core/internal/app-globals'],
-    ['@hydrate-factory', '@stencil/core/hydrate-factory'],
-    ['@stencil/core/mock-doc', '@stencil/core/mock-doc'],
-    ['@stencil/core/testing', '@stencil/core/testing'],
+    ['@app-data', 'stencil-hotfix/internal/app-data'],
+    ['@app-globals', 'stencil-hotfix/internal/app-globals'],
+    ['@hydrate-factory', 'stencil-hotfix/hydrate-factory'],
+    ['stencil-hotfix/mock-doc', 'stencil-hotfix/mock-doc'],
+    ['stencil-hotfix/testing', 'stencil-hotfix/testing'],
     ['@sys-api-node', './index.js'],
     ['@dev-server-process', './server-process.js'],
   ]);

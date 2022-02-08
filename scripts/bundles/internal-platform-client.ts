@@ -21,9 +21,9 @@ export async function internalClient(opts: BuildOptions) {
 
   await copyPolyfills(opts, outputInternalClientPolyfillsDir);
 
-  // write @stencil/core/internal/client/package.json
+  // write stencil-hotfix/internal/client/package.json
   writePkgJson(opts, outputInternalClientDir, {
-    name: '@stencil/core/internal/client',
+    name: 'stencil-hotfix/internal/client',
     description:
       'Stencil internal client platform to be imported by the Stencil Compiler and internal runtime. Breaking changes can and will happen at any time.',
     main: 'index.js',
@@ -79,7 +79,7 @@ export async function internalClient(opts: BuildOptions) {
         resolveId(importee) {
           if (importee === '@platform') {
             return {
-              id: `@stencil/core`,
+              id: `stencil-hotfix`,
               external: true,
             };
           }

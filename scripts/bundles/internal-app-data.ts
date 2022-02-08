@@ -10,12 +10,12 @@ export async function internalAppData(opts: BuildOptions) {
 
   await fs.emptyDir(outputInternalAppDataDir);
 
-  // copy @stencil/core/internal/app-data/index.d.ts
+  // copy stencil-hotfix/internal/app-data/index.d.ts
   await fs.copyFile(join(inputAppDataDir, 'index.d.ts'), join(outputInternalAppDataDir, 'index.d.ts'));
 
-  // write @stencil/core/internal/app-data/package.json
+  // write stencil-hotfix/internal/app-data/package.json
   writePkgJson(opts, outputInternalAppDataDir, {
-    name: '@stencil/core/internal/app-data',
+    name: 'stencil-hotfix/internal/app-data',
     description: 'Used for default app data and build conditionals within builds.',
     main: 'index.cjs',
     module: 'index.js',

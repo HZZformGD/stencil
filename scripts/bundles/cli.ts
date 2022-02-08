@@ -42,12 +42,12 @@ export async function cli(opts: BuildOptions): Promise<ReadonlyArray<RollupOptio
 
   // create public d.ts
   let dts = await fs.readFile(join(inputDir, 'public.d.ts'), 'utf8');
-  dts = dts.replace('@stencil/core/internal', '../internal/index');
+  dts = dts.replace('stencil-hotfix/internal', '../internal/index');
   await fs.writeFile(join(opts.output.cliDir, dtsFilename), dts);
 
-  // write @stencil/core/compiler/package.json
+  // write stencil-hotfix/compiler/package.json
   writePkgJson(opts, opts.output.cliDir, {
-    name: '@stencil/core/cli',
+    name: 'stencil-hotfix/cli',
     description: 'Stencil CLI.',
     main: cjsFilename,
     module: esmFilename,
@@ -59,7 +59,7 @@ export async function cli(opts: BuildOptions): Promise<ReadonlyArray<RollupOptio
     output: [esOutput, cjsOutput],
     external: ['path'],
     plugins: [
-      relativePathPlugin('@stencil/core/testing', '../testing/index.js'),
+      relativePathPlugin('stencil-hotfix/testing', '../testing/index.js'),
       relativePathPlugin('prompts', '../sys/node/prompts.js'),
       aliasPlugin(opts),
       rollupResolve({

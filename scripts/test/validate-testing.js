@@ -1,7 +1,7 @@
 var testing = require('../../testing/index.js');
 
 var input = `
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop } from 'stencil-hotfix';
 @Component({
   tag: 'my-cmp'
 })

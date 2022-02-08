@@ -23,7 +23,7 @@ export async function testing(opts: BuildOptions) {
 
   // write package.json
   writePkgJson(opts, opts.output.testingDir, {
-    name: '@stencil/core/testing',
+    name: 'stencil-hotfix/testing',
     description: 'Stencil testing suite.',
     main: 'index.js',
     types: 'index.d.ts',
@@ -74,14 +74,14 @@ export async function testing(opts: BuildOptions) {
     output,
     external,
     plugins: [
-      lazyRequirePlugin(opts, ['@app-data'], '@stencil/core/internal/app-data'),
-      lazyRequirePlugin(opts, ['@platform', '@stencil/core/internal/testing'], '@stencil/core/internal/testing'),
-      lazyRequirePlugin(opts, ['@stencil/core/dev-server'], '../dev-server/index.js'),
-      lazyRequirePlugin(opts, ['@stencil/core/mock-doc'], '../mock-doc/index.cjs'),
+      lazyRequirePlugin(opts, ['@app-data'], 'stencil-hotfix/internal/app-data'),
+      lazyRequirePlugin(opts, ['@platform', 'stencil-hotfix/internal/testing'], 'stencil-hotfix/internal/testing'),
+      lazyRequirePlugin(opts, ['stencil-hotfix/dev-server'], '../dev-server/index.js'),
+      lazyRequirePlugin(opts, ['stencil-hotfix/mock-doc'], '../mock-doc/index.cjs'),
       {
         name: 'testingImportResolverPlugin',
         resolveId(importee) {
-          if (importee === '@stencil/core/compiler') {
+          if (importee === 'stencil-hotfix/compiler') {
             return {
               id: '../compiler/stencil.js',
               external: true,

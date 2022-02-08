@@ -33,12 +33,12 @@ export async function compiler(opts: BuildOptions) {
 
   // create public d.ts
   let dts = await fs.readFile(join(inputDir, 'public.d.ts'), 'utf8');
-  dts = dts.replace('@stencil/core/internal', '../internal/index');
+  dts = dts.replace('stencil-hotfix/internal', '../internal/index');
   await fs.writeFile(join(opts.output.compilerDir, compilerDtsName), dts);
 
-  // write @stencil/core/compiler/package.json
+  // write stencil-hotfix/compiler/package.json
   writePkgJson(opts, opts.output.compilerDir, {
-    name: '@stencil/core/compiler',
+    name: 'stencil-hotfix/compiler',
     description: 'Stencil Compiler.',
     main: compilerFileName,
     types: compilerDtsName,
@@ -81,7 +81,7 @@ export async function compiler(opts: BuildOptions) {
          * @returns an object that resolves an import to some id
          */
         resolveId(id: string): string | null {
-          if (id === '@stencil/core/mock-doc') {
+          if (id === 'stencil-hotfix/mock-doc') {
             return join(opts.buildDir, 'mock-doc', 'index.js');
           }
           if (id === '@microsoft/typescript-etw' || id === 'inspector') {

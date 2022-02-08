@@ -19,7 +19,7 @@ export async function mockDoc(opts: BuildOptions) {
   const bundleDtsPromise = bundleMockDocDts(inputDir, outputDir);
 
   writePkgJson(opts, outputDir, {
-    name: '@stencil/core/mock-doc',
+    name: 'stencil-hotfix/mock-doc',
     description: 'Mock window, document and DOM outside of a browser environment.',
     main: 'index.cjs',
     module: 'index.js',

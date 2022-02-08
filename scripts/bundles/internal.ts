@@ -17,13 +17,13 @@ export async function internal(opts: BuildOptions) {
 
   await copyStencilCoreEntry(opts);
 
-  // copy @stencil/core/internal default entry, which defaults to client
+  // copy stencil-hotfix/internal default entry, which defaults to client
   // but we're not exposing all of Stencil's internal code (only the types)
   await fs.copyFile(join(inputInternalDir, 'default.js'), join(opts.output.internalDir, 'index.js'));
 
-  // write @stencil/core/internal/package.json
+  // write stencil-hotfix/internal/package.json
   writePkgJson(opts, opts.output.internalDir, {
-    name: '@stencil/core/internal',
+    name: 'stencil-hotfix/internal',
     description:
       'Stencil internals only to be imported by the Stencil Compiler. Breaking changes can and will happen at any time.',
     main: 'index.js',
@@ -41,40 +41,40 @@ export async function internal(opts: BuildOptions) {
 async function copyStencilInternalDts(opts: BuildOptions, outputInternalDir: string) {
   const declarationsInputDir = join(opts.buildDir, 'declarations');
 
-  // copy to @stencil/core/internal
+  // copy to stencil-hotfix/internal
 
-  // @stencil/core/internal/index.d.ts
+  // stencil-hotfix/internal/index.d.ts
   const indexDtsSrcPath = join(declarationsInputDir, 'index.d.ts');
   const indexDtsDestPath = join(outputInternalDir, 'index.d.ts');
   let indexDts = cleanDts(await fs.readFile(indexDtsSrcPath, 'utf8'));
   indexDts = prependExtModules(indexDts);
   await fs.writeFile(indexDtsDestPath, indexDts);
 
-  // @stencil/core/internal/stencil-private.d.ts
+  // stencil-hotfix/internal/stencil-private.d.ts
   const privateDtsSrcPath = join(declarationsInputDir, 'stencil-private.d.ts');
   const privateDtsDestPath = join(outputInternalDir, 'stencil-private.d.ts');
   const privateDts = cleanDts(await fs.readFile(privateDtsSrcPath, 'utf8'));
   await fs.writeFile(privateDtsDestPath, privateDts);
 
-  // @stencil/core/internal/stencil-public.compiler.d.ts
+  // stencil-hotfix/internal/stencil-public.compiler.d.ts
   const compilerDtsSrcPath = join(declarationsInputDir, 'stencil-public-compiler.d.ts');
   const compilerDtsDestPath = join(outputInternalDir, 'stencil-public-compiler.d.ts');
   const compilerDts = cleanDts(await fs.readFile(compilerDtsSrcPath, 'utf8'));
   await fs.writeFile(compilerDtsDestPath, compilerDts);
 
-  // @stencil/core/internal/stencil-public-docs.d.ts
+  // stencil-hotfix/internal/stencil-public-docs.d.ts
   const docsDtsSrcPath = join(declarationsInputDir, 'stencil-public-docs.d.ts');
   const docsDtsDestPath = join(outputInternalDir, 'stencil-public-docs.d.ts');
   const docsDts = cleanDts(await fs.readFile(docsDtsSrcPath, 'utf8'));
   await fs.writeFile(docsDtsDestPath, docsDts);
 
-  // @stencil/core/internal/stencil-public-runtime.d.ts
+  // stencil-hotfix/internal/stencil-public-runtime.d.ts
   const runtimeDtsSrcPath = join(declarationsInputDir, 'stencil-public-runtime.d.ts');
   const runtimeDtsDestPath = join(outputInternalDir, 'stencil-public-runtime.d.ts');
   const runtimeDts = cleanDts(await fs.readFile(runtimeDtsSrcPath, 'utf8'));
   await fs.writeFile(runtimeDtsDestPath, runtimeDts);
 
-  // @stencil/core/internal/stencil-ext-modules.d.ts (.svg/.css)
+  // stencil-hotfix/internal/stencil-ext-modules.d.ts (.svg/.css)
   const srcExtModuleOutput = join(opts.srcDir, 'declarations', 'stencil-ext-modules.d.ts');
   const dstExtModuleOutput = join(outputInternalDir, 'stencil-ext-modules.d.ts');
   await fs.copyFile(srcExtModuleOutput, dstExtModuleOutput);
@@ -85,7 +85,7 @@ function prependExtModules(content: string) {
 }
 
 async function copyStencilCoreEntry(opts: BuildOptions) {
-  // write @stencil/core entry
+  // write stencil-hotfix entry
   const stencilCoreSrcDir = join(opts.srcDir, 'internal', 'stencil-core');
   const stencilCoreDstDir = join(opts.output.internalDir, 'stencil-core');
   await fs.ensureDir(stencilCoreDstDir);

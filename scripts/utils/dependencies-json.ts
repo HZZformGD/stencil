@@ -10,7 +10,7 @@ export async function updateDependenciesJson(opts: BuildOptions) {
 
   const data = JSON.parse(await readFile(srcPath, 'utf8'));
   for (const dep of data.dependencies) {
-    if (dep.name === '@stencil/core') {
+    if (dep.name === 'stencil-hotfix') {
       dep.resources = stencilResources;
     }
   }
@@ -21,7 +21,7 @@ export async function updateDependenciesJson(opts: BuildOptions) {
   // now update the versions and write a copy for the root
   for (const dep of data.dependencies) {
     switch (dep.name) {
-      case '@stencil/core':
+      case 'stencil-hotfix':
         dep.version = opts.version;
         break;
       case 'rollup':

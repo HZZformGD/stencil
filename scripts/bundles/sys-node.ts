@@ -19,12 +19,12 @@ export async function sysNode(opts: BuildOptions) {
 
   // create public d.ts
   let dts = await fs.readFile(join(inputDir, 'public.d.ts'), 'utf8');
-  dts = dts.replace('@stencil/core/internal', '../../internal/index');
+  dts = dts.replace('stencil-hotfix/internal', '../../internal/index');
   await fs.writeFile(join(opts.output.sysNodeDir, 'index.d.ts'), dts);
 
-  // write @stencil/core/compiler/package.json
+  // write stencil-hotfix/compiler/package.json
   writePkgJson(opts, opts.output.sysNodeDir, {
-    name: '@stencil/core/sys/node',
+    name: 'stencil-hotfix/sys/node',
     description: 'Stencil Node System.',
     main: 'index.js',
     types: 'index.d.ts',
@@ -74,7 +74,7 @@ export async function sysNode(opts: BuildOptions) {
       {
         name: 'sysNodeWorkerAlias',
         resolveId(id) {
-          if (id === '@stencil/core/compiler') {
+          if (id === 'stencil-hotfix/compiler') {
             return {
               id: '../../compiler/stencil.js',
               external: true,
@@ -154,7 +154,7 @@ function bundleExternal(opts: BuildOptions, outputDir: string, cachedDir: string
             return callback(null, undefined);
           }
 
-          if (request === '@stencil/core/mock-doc') {
+          if (request === 'stencil-hotfix/mock-doc') {
             return callback(null, '../../mock-doc');
           }
 

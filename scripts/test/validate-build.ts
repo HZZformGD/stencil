@@ -98,7 +98,7 @@ const pkgs: TestPackage[] = [
     ],
   },
   {
-    // @stencil/core
+    // stencil-hotfix
     packageJson: 'package.json',
     packageJsonFiles: [
       'bin/',
@@ -227,9 +227,9 @@ function validateDts(opts: BuildOptions, dtsEntries: string[]): void {
   const program = ts.createProgram(dtsEntries, {
     baseUrl: '.',
     paths: {
-      '@stencil/core/mock-doc': [join(opts.rootDir, 'mock-doc', 'index.d.ts')],
-      '@stencil/core/internal': [join(opts.rootDir, 'internal', 'index.d.ts')],
-      '@stencil/core/internal/testing': [join(opts.rootDir, 'internal', 'testing', 'index.d.ts')],
+      'stencil-hotfix/mock-doc': [join(opts.rootDir, 'mock-doc', 'index.d.ts')],
+      'stencil-hotfix/internal': [join(opts.rootDir, 'internal', 'index.d.ts')],
+      'stencil-hotfix/internal/testing': [join(opts.rootDir, 'internal', 'testing', 'index.d.ts')],
     },
   });
 
@@ -339,13 +339,13 @@ async function validateModuleTreeshake(opts: BuildOptions, moduleName: string, e
       {
         name: 'stencilResolver',
         resolveId(id) {
-          if (id === '@stencil/core/internal/client' || id === '@stencil/core') {
+          if (id === 'stencil-hotfix/internal/client' || id === 'stencil-hotfix') {
             return join(opts.output.internalDir, 'client', 'index.js');
           }
-          if (id === '@stencil/core/internal/app-data') {
+          if (id === 'stencil-hotfix/internal/app-data') {
             return join(opts.output.internalDir, 'app-data', 'index.js');
           }
-          if (id === '@stencil/core/internal/app-globals') {
+          if (id === 'stencil-hotfix/internal/app-globals') {
             return id;
           }
           if (id === virtualInputId) {
@@ -356,7 +356,7 @@ async function validateModuleTreeshake(opts: BuildOptions, moduleName: string, e
           }
         },
         load(id) {
-          if (id === '@stencil/core/internal/app-globals') {
+          if (id === 'stencil-hotfix/internal/app-globals') {
             return 'export const globalScripts = () => {};';
           }
           if (id === virtualInputId) {

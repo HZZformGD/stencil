@@ -17,9 +17,9 @@ export async function internalHydrate(opts: BuildOptions) {
 
   await fs.emptyDir(outputInternalHydrateDir);
 
-  // write @stencil/core/internal/hydrate/package.json
+  // write stencil-hotfix/internal/hydrate/package.json
   writePkgJson(opts, outputInternalHydrateDir, {
-    name: '@stencil/core/internal/hydrate',
+    name: 'stencil-hotfix/internal/hydrate',
     description:
       'Stencil internal hydrate platform to be imported by the Stencil Compiler. Breaking changes can and will happen at any time.',
     main: 'index.js',
@@ -80,7 +80,7 @@ export async function internalHydrate(opts: BuildOptions) {
 }
 
 async function createHydrateRunnerDtsBundle(opts: BuildOptions, inputHydrateDir: string, outputDir: string) {
-  // bundle @stencil/core/internal/hydrate/runner.d.ts
+  // bundle stencil-hotfix/internal/hydrate/runner.d.ts
   const dtsEntry = join(inputHydrateDir, 'runner', 'index.d.ts');
   const dtsContent = await bundleDts(opts, dtsEntry);
 

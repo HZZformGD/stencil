@@ -24,7 +24,7 @@ export async function devServer(opts: BuildOptions) {
 
   // write package.json
   writePkgJson(opts, opts.output.devServerDir, {
-    name: '@stencil/core/dev-server',
+    name: 'stencil-hotfix/dev-server',
     description: 'Stencil Development Server which communicates with the Stencil Compiler.',
     main: 'index.js',
     types: 'index.d.ts',
@@ -156,7 +156,7 @@ export async function devServer(opts: BuildOptions) {
       {
         name: 'connectorPlugin',
         resolveId(id) {
-          if (id === '@stencil/core/dev-server/client') {
+          if (id === 'stencil-hotfix/dev-server/client') {
             return join(inputDir, 'client', 'index.js');
           }
         },
@@ -221,7 +221,7 @@ export async function devServer(opts: BuildOptions) {
 
   // write package.json
   writePkgJson(opts, join(opts.output.devServerDir, 'client'), {
-    name: '@stencil/core/dev-server/client',
+    name: 'stencil-hotfix/dev-server/client',
     description: 'Stencil Dev Server Client.',
     main: 'index.js',
     types: 'index.d.ts',

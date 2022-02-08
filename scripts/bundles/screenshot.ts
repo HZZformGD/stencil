@@ -12,7 +12,7 @@ import { RollupOptions } from 'rollup';
 export async function screenshot(opts: BuildOptions) {
   const inputScreenshotDir = join(opts.buildDir, 'screenshot');
 
-  // copy @stencil/core/screenshot/index.d.ts
+  // copy stencil-hotfix/screenshot/index.d.ts
   await fs.copy(inputScreenshotDir, opts.output.screenshotDir, {
     filter: (f) => {
       if (f.endsWith('.d.ts')) {
@@ -25,9 +25,9 @@ export async function screenshot(opts: BuildOptions) {
     },
   });
 
-  // write @stencil/core/screenshot/package.json
+  // write stencil-hotfix/screenshot/package.json
   writePkgJson(opts, opts.output.screenshotDir, {
-    name: '@stencil/core/screenshot',
+    name: 'stencil-hotfix/screenshot',
     description: 'Stencil Screenshot.',
     main: 'index.js',
     types: 'index.d.ts',
